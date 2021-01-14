@@ -10,9 +10,9 @@ print(date_format)
 current_format = 't_lg' + now.strftime('%Y') + now.strftime('%m')
 
 connection = pymysql.connect(
-    host='10.10.2.97', #host 
-    user='root', #username
-    password='P@ss0wrd', #password
+    host='', #host 
+    user='', #username
+    password='', #password
     port=3312,
     db='biostar2_ac'
 )

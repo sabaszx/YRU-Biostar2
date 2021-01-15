@@ -1,0 +1,36 @@
+20/12/15 10:11:20.461792: <info> BS2ServiceHandler state: 1 type:0
+20/12/15 10:11:20.461792: <info> BS2ServiceHandlerEx lpContext = CGIServer
+20/12/15 10:11:20.461792: <info> BS2StartBiostarServer Stop Log
+20/12/15 10:11:20.461792: <info> command stop biostar
+20/12/15 10:11:20.461792: <info> stopBiostar: req_set_biostar_stop
+20/12/15 10:11:21.493478: <info> waitForExitBiostar. exit biostar success.
+20/12/15 10:11:21.493478: <info> Launcher Service End!
+20/12/15 10:11:24.634117: <info> biostar_restart_wait_time_in_seconds_ is set to 5
+20/12/15 10:11:24.634117: <trace> biostar version : 2.8.6.38
+20/12/15 10:11:24.634117: <trace> ac version : 2.8.6.92
+20/12/15 10:11:24.634117: <trace> ta version : 2.8.6.63
+20/12/15 10:11:24.634117: <info> ================= launcher start ====================
+20/12/15 10:11:25.149744: <info> launcher service name:BioStar 2 Launcher(x64)
+20/12/15 10:11:25.149744: <info> BS2ServiceMain Func Start Log
+20/12/15 10:11:25.149744: <info> RegisterServiceCtrlHandler success
+20/12/15 10:11:25.149744: <info> Launcher Service Start!
+20/12/15 10:11:25.149744: <info> FixedErrorFiles. std exception - code:./repair.dat: cannot open file
+20/12/15 10:11:25.149744: <info> BS2StartBiostarServer Start Log
+20/12/15 14:07:58.161465: <info> BS2ServiceHandler state: 1 type:0
+20/12/15 14:07:58.161465: <info> BS2ServiceHandlerEx lpContext = CGIServer
+20/12/15 14:07:58.162447: <info> BS2StartBiostarServer Stop Log
+20/12/15 14:07:58.162447: <info> command stop biostar
+20/12/15 14:07:58.162447: <info> stopBiostar: req_set_biostar_stop
+20/12/15 14:07:58.516316: <info> waitForExitBiostar. exit biostar success.
+20/12/15 14:07:58.516316: <info> Launcher Service End!
+20/12/15 14:07:59.500790: <info> biostar_restart_wait_time_in_seconds_ is set to 5
+20/12/15 14:07:59.500790: <trace> biostar version : 2.8.6.38
+20/12/15 14:07:59.500790: <trace> ac version : 2.8.6.92
+20/12/15 14:07:59.500790: <trace> ta version : 2.8.6.63
+20/12/15 14:07:59.500790: <info> ================= launcher start ====================
+20/12/15 14:08:00.016322: <info> launcher service name:BioStar 2 Launcher(x64)
+20/12/15 14:08:00.016322: <info> BS2ServiceMain Func Start Log
+20/12/15 14:08:00.016322: <info> RegisterServiceCtrlHandler success
+20/12/15 14:08:00.016322: <info> Launcher Service Start!
+20/12/15 14:08:00.016322: <info> FixedErrorFiles. std exception - code:./repair.dat: cannot open file
+20/12/15 14:08:00.016322: <info> BS2StartBiostarServer Start Log

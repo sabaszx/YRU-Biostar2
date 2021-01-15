@@ -1,0 +1,617 @@
+20/12/04 16:38:37.481646: <info> BS2ServiceHandler state: 1 type:0
+20/12/04 16:38:37.481646: <info> BS2ServiceHandlerEx lpContext = CGIServer
+20/12/04 16:38:37.481646: <info> BS2StartBiostarServer Stop Log
+20/12/04 16:38:37.481646: <info> command stop biostar
+20/12/04 16:38:37.482647: <info> stopBiostar: req_set_biostar_stop
+20/12/04 16:38:38.025135: <info> waitForExitBiostar. exit biostar success.
+20/12/04 16:38:38.025135: <info> Launcher Service End!
+20/12/04 16:38:42.868575: <info> biostar_restart_wait_time_in_seconds_ is set to 5
+20/12/04 16:38:42.870573: <trace> biostar version : 2.8.6.38
+20/12/04 16:38:42.870573: <trace> ac version : 2.8.6.92
+20/12/04 16:38:42.870573: <trace> ta version : 2.8.6.63
+20/12/04 16:38:42.870573: <info> ================= launcher start ====================
+20/12/04 16:38:43.371677: <info> launcher service name:BioStar 2 Launcher(x64)
+20/12/04 16:38:43.372662: <info> BS2ServiceMain Func Start Log
+20/12/04 16:38:43.372662: <info> RegisterServiceCtrlHandler success
+20/12/04 16:38:43.372662: <info> Launcher Service Start!
+20/12/04 16:38:43.373665: <info> FixedErrorFiles. std exception - code:./repair.dat: cannot open file
+20/12/04 16:38:43.375671: <info> BS2StartBiostarServer Start Log
+20/12/04 17:13:00.810468: <info> BS2ServiceHandler state: 1 type:0
+20/12/04 17:13:00.811467: <info> BS2ServiceHandlerEx lpContext = CGIServer
+20/12/04 17:13:00.811467: <info> BS2StartBiostarServer Stop Log
+20/12/04 17:13:00.811467: <info> command stop biostar
+20/12/04 17:13:00.811467: <info> stopBiostar: req_set_biostar_stop
+20/12/04 17:13:00.915479: <info> waitForExitBiostar. exit biostar success.
+20/12/04 17:13:00.915479: <info> Launcher Service End!
+20/12/04 17:13:02.140423: <info> biostar_restart_wait_time_in_seconds_ is set to 5
+20/12/04 17:13:02.142417: <trace> biostar version : 2.8.6.38
+20/12/04 17:13:02.142417: <trace> ac version : 2.8.6.92
+20/12/04 17:13:02.142417: <trace> ta version : 2.8.6.63
+20/12/04 17:13:02.142417: <info> ================= launcher start ====================
+20/12/04 17:13:02.645293: <info> launcher service name:BioStar 2 Launcher(x64)
+20/12/04 17:13:02.646291: <info> BS2ServiceMain Func Start Log
+20/12/04 17:13:02.646291: <info> RegisterServiceCtrlHandler success
+20/12/04 17:13:02.646291: <info> Launcher Service Start!
+20/12/04 17:13:02.647299: <info> FixedErrorFiles. std exception - code:./repair.dat: cannot open file
+20/12/04 17:13:02.649292: <info> BS2StartBiostarServer Start Log
+20/12/04 17:18:53.322303: <info> BS2ServiceHandler state: 1 type:0
+20/12/04 17:18:53.322303: <info> BS2ServiceHandlerEx lpContext = CGIServer
+20/12/04 17:18:53.323304: <info> BS2StartBiostarServer Stop Log
+20/12/04 17:18:53.323304: <info> command stop biostar
+20/12/04 17:18:53.323304: <info> stopBiostar: req_set_biostar_stop
+20/12/04 17:18:53.531444: <info> waitForExitBiostar. exit biostar success.
+20/12/04 17:18:53.531444: <info> Launcher Service End!
+20/12/04 17:18:57.500622: <info> biostar_restart_wait_time_in_seconds_ is set to 5
+20/12/04 17:18:57.502621: <trace> biostar version : 2.8.6.38
+20/12/04 17:18:57.502621: <trace> ac version : 2.8.6.92
+20/12/04 17:18:57.502621: <trace> ta version : 2.8.6.63
+20/12/04 17:18:57.502621: <info> ================= launcher start ====================
+20/12/04 17:18:58.008028: <info> launcher service name:BioStar 2 Launcher(x64)
+20/12/04 17:18:58.009029: <info> BS2ServiceMain Func Start Log
+20/12/04 17:18:58.009029: <info> RegisterServiceCtrlHandler success
+20/12/04 17:18:58.009029: <info> Launcher Service Start!
+20/12/04 17:18:58.010034: <info> FixedErrorFiles. std exception - code:./repair.dat: cannot open file
+20/12/04 17:18:58.012030: <info> BS2StartBiostarServer Start Log
+20/12/04 17:41:32.681194: <info> BS2ServiceHandler state: 1 type:0
+20/12/04 17:41:32.681194: <info> BS2ServiceHandlerEx lpContext = CGIServer
+20/12/04 17:41:32.681194: <info> BS2StartBiostarServer Stop Log
+20/12/04 17:41:32.681194: <info> command stop biostar
+20/12/04 17:41:32.681194: <info> stopBiostar: req_set_biostar_stop
+20/12/04 17:41:32.931206: <info> waitForExitBiostar. exit biostar success.
+20/12/04 17:41:32.931206: <info> Launcher Service End!
+20/12/04 17:41:37.666709: <info> biostar_restart_wait_time_in_seconds_ is set to 5
+20/12/04 17:41:37.682266: <trace> biostar version : 2.8.6.38
+20/12/04 17:41:37.682266: <trace> ac version : 2.8.6.92
+20/12/04 17:41:37.682266: <trace> ta version : 2.8.6.63
+20/12/04 17:41:37.682266: <info> ================= launcher start ====================
+20/12/04 17:41:38.197876: <info> launcher service name:BioStar 2 Launcher(x64)
+20/12/04 17:41:38.197876: <info> BS2ServiceMain Func Start Log
+20/12/04 17:41:38.197876: <info> RegisterServiceCtrlHandler success
+20/12/04 17:41:38.197876: <info> Launcher Service Start!
+20/12/04 17:41:38.197876: <info> FixedErrorFiles. std exception - code:./repair.dat: cannot open file
+20/12/04 17:41:38.197876: <info> BS2StartBiostarServer Start Log
+20/12/04 17:41:43.244765: <info> biostar exit. restart biostar process.
+20/12/04 17:41:48.244776: <info> biostar exit. restart biostar process.
+20/12/04 17:41:53.307875: <info> biostar exit. restart biostar process.
+20/12/04 17:41:58.356353: <info> biostar exit. restart biostar process.
+20/12/04 17:42:03.357699: <info> biostar exit. restart biostar process.
+20/12/04 17:42:08.436031: <info> biostar exit. restart biostar process.
+20/12/04 17:42:13.467291: <info> biostar exit. restart biostar process.
+20/12/04 17:42:18.499295: <info> biostar exit. restart biostar process.
+20/12/04 17:42:23.500424: <info> biostar exit. restart biostar process.
+20/12/04 17:42:28.500866: <info> biostar exit. restart biostar process.
+20/12/04 17:42:33.548537: <info> biostar exit. restart biostar process.
+20/12/04 17:42:38.548743: <info> biostar exit. restart biostar process.
+20/12/04 17:42:43.626757: <info> biostar exit. restart biostar process.
+20/12/04 17:42:48.658000: <info> biostar exit. restart biostar process.
+20/12/04 17:42:53.658021: <info> biostar exit. restart biostar process.
+20/12/04 17:42:58.658584: <info> biostar exit. restart biostar process.
+20/12/04 17:43:03.658604: <info> biostar exit. restart biostar process.
+20/12/04 17:43:08.659311: <info> biostar exit. restart biostar process.
+20/12/04 17:43:13.691675: <info> biostar exit. restart biostar process.
+20/12/04 17:43:18.738704: <info> biostar exit. restart biostar process.
+20/12/04 17:43:23.785445: <info> biostar exit. restart biostar process.
+20/12/04 17:43:28.817430: <info> biostar exit. restart biostar process.
+20/12/04 17:43:33.833023: <info> biostar exit. restart biostar process.
+20/12/04 17:43:38.848657: <info> biostar exit. restart biostar process.
+20/12/04 17:43:43.864293: <info> biostar exit. restart biostar process.
+20/12/04 17:43:48.866227: <info> biostar exit. restart biostar process.
+20/12/04 17:43:53.883660: <info> biostar exit. restart biostar process.
+20/12/04 17:43:58.883960: <info> biostar exit. restart biostar process.
+20/12/04 17:44:03.883974: <info> biostar exit. restart biostar process.
+20/12/04 17:44:08.931615: <info> biostar exit. restart biostar process.
+20/12/04 17:44:13.947244: <info> biostar exit. restart biostar process.
+20/12/04 17:44:18.947260: <info> biostar exit. restart biostar process.
+20/12/04 17:44:23.947293: <info> biostar exit. restart biostar process.
+20/12/04 17:44:29.009809: <info> biostar exit. restart biostar process.
+20/12/04 17:44:34.056674: <info> biostar exit. restart biostar process.
+20/12/04 17:44:39.072916: <info> biostar exit. restart biostar process.
+20/12/04 17:44:44.121179: <info> biostar exit. restart biostar process.
+20/12/04 17:44:49.152706: <info> biostar exit. restart biostar process.
+20/12/04 17:44:54.168349: <info> biostar exit. restart biostar process.
+20/12/04 17:44:59.183979: <info> biostar exit. restart biostar process.
+20/12/04 17:45:04.215252: <info> biostar exit. restart biostar process.
+20/12/04 17:45:09.215254: <info> biostar exit. restart biostar process.
+20/12/04 17:45:14.246523: <info> biostar exit. restart biostar process.
+20/12/04 17:45:19.247533: <info> biostar exit. restart biostar process.
+20/12/04 17:45:24.247549: <info> biostar exit. restart biostar process.
+20/12/04 17:45:29.247555: <info> biostar exit. restart biostar process.
+20/12/04 17:45:34.247575: <info> biostar exit. restart biostar process.
+20/12/04 17:45:39.247580: <info> biostar exit. restart biostar process.
+20/12/04 17:45:44.247588: <info> biostar exit. restart biostar process.
+20/12/04 17:45:49.248924: <info> biostar exit. restart biostar process.
+20/12/04 17:45:54.264602: <info> biostar exit. restart biostar process.
+20/12/04 17:45:59.265307: <info> biostar exit. restart biostar process.
+20/12/04 17:46:04.327815: <info> biostar exit. restart biostar process.
+20/12/04 17:46:09.327828: <info> biostar exit. restart biostar process.
+20/12/04 17:46:14.343799: <info> biostar exit. restart biostar process.
+20/12/04 17:46:19.343816: <info> biostar exit. restart biostar process.
+20/12/04 17:46:24.392247: <info> biostar exit. restart biostar process.
+20/12/04 17:46:29.407893: <info> biostar exit. restart biostar process.
+20/12/04 17:46:34.407898: <info> biostar exit. restart biostar process.
+20/12/04 17:46:39.470407: <info> biostar exit. restart biostar process.
+20/12/04 17:46:44.470415: <info> biostar exit. restart biostar process.
+20/12/04 17:46:49.470433: <info> biostar exit. restart biostar process.
+20/12/04 17:46:54.470441: <info> biostar exit. restart biostar process.
+20/12/04 17:46:59.471552: <info> biostar exit. restart biostar process.
+20/12/04 17:47:04.487198: <info> biostar exit. restart biostar process.
+20/12/04 17:47:09.518622: <info> biostar exit. restart biostar process.
+20/12/04 17:47:14.643642: <info> biostar exit. restart biostar process.
+20/12/04 17:47:19.643645: <info> biostar exit. restart biostar process.
+20/12/04 17:47:24.643662: <info> biostar exit. restart biostar process.
+20/12/04 17:47:29.690543: <info> biostar exit. restart biostar process.
+20/12/04 17:47:34.721804: <info> biostar exit. restart biostar process.
+20/12/04 17:47:39.753059: <info> biostar exit. restart biostar process.
+20/12/04 17:47:44.753069: <info> biostar exit. restart biostar process.
+20/12/04 17:47:49.878098: <info> biostar exit. restart biostar process.
+20/12/04 17:47:54.894343: <info> biostar exit. restart biostar process.
+20/12/04 17:47:59.941230: <info> biostar exit. restart biostar process.
+20/12/04 17:48:04.972548: <info> biostar exit. restart biostar process.
+20/12/04 17:48:09.972666: <info> biostar exit. restart biostar process.
+20/12/04 17:48:14.972721: <info> biostar exit. restart biostar process.
+20/12/04 17:48:19.988360: <info> biostar exit. restart biostar process.
+20/12/04 17:48:24.988372: <info> biostar exit. restart biostar process.
+20/12/04 17:48:30.004001: <info> biostar exit. restart biostar process.
+20/12/04 17:48:35.019651: <info> biostar exit. restart biostar process.
+20/12/04 17:48:40.035689: <info> biostar exit. restart biostar process.
+20/12/04 17:48:45.066943: <info> biostar exit. restart biostar process.
+20/12/04 17:48:50.083645: <info> biostar exit. restart biostar process.
+20/12/04 17:48:55.083660: <info> biostar exit. restart biostar process.
+20/12/04 17:49:00.115853: <info> biostar exit. restart biostar process.
+20/12/04 17:49:05.162751: <info> biostar exit. restart biostar process.
+20/12/04 17:49:10.194012: <info> biostar exit. restart biostar process.
+20/12/04 17:49:15.194025: <info> biostar exit. restart biostar process.
+20/12/04 17:49:20.273759: <info> biostar exit. restart biostar process.
+20/12/04 18:17:26.809624: <info> BS2ServiceHandler state: 1 type:0
+20/12/04 18:17:26.809624: <info> BS2ServiceHandlerEx lpContext = CGIServer
+20/12/04 18:17:26.809624: <info> BS2StartBiostarServer Stop Log
+20/12/04 18:17:26.809624: <info> command stop biostar
+20/12/04 18:17:26.809624: <info> stopBiostar: req_set_biostar_stop
+20/12/04 18:17:27.762755: <info> waitForExitBiostar. exit biostar success.
+20/12/04 18:17:27.762755: <info> Launcher Service End!
+20/12/04 18:17:28.137772: <info> biostar_restart_wait_time_in_seconds_ is set to 5
+20/12/04 18:17:28.137772: <trace> biostar version : 2.8.6.38
+20/12/04 18:17:28.137772: <trace> ac version : 2.8.6.92
+20/12/04 18:17:28.137772: <trace> ta version : 2.8.6.63
+20/12/04 18:17:28.137772: <info> ================= launcher start ====================
+20/12/04 18:17:28.653389: <info> launcher service name:BioStar 2 Launcher(x64)
+20/12/04 18:17:28.653389: <info> BS2ServiceMain Func Start Log
+20/12/04 18:17:28.653389: <info> RegisterServiceCtrlHandler success
+20/12/04 18:17:28.653389: <info> Launcher Service Start!
+20/12/04 18:17:28.653389: <info> FixedErrorFiles. std exception - code:./repair.dat: cannot open file
+20/12/04 18:17:28.653389: <info> BS2StartBiostarServer Start Log
+20/12/04 18:17:33.669093: <info> biostar exit. restart biostar process.
+20/12/04 18:17:38.840966: <info> biostar exit. restart biostar process.
+20/12/04 18:17:43.856595: <info> biostar exit. restart biostar process.
+20/12/04 18:17:48.997237: <info> biostar exit. restart biostar process.
+20/12/04 18:17:53.997258: <info> biostar exit. restart biostar process.
+20/12/04 18:17:59.059741: <info> biostar exit. restart biostar process.
+20/12/04 18:18:04.075395: <info> biostar exit. restart biostar process.
+20/12/04 18:18:09.076477: <info> biostar exit. restart biostar process.
+20/12/04 18:18:14.092108: <info> biostar exit. restart biostar process.
+20/12/04 18:18:19.107753: <info> biostar exit. restart biostar process.
+20/12/04 18:18:24.124172: <info> biostar exit. restart biostar process.
+20/12/04 18:18:29.124181: <info> biostar exit. restart biostar process.
+20/12/04 18:18:34.124183: <info> biostar exit. restart biostar process.
+20/12/04 18:18:39.140917: <info> biostar exit. restart biostar process.
+20/12/04 18:18:44.140924: <info> biostar exit. restart biostar process.
+20/12/04 18:18:49.156552: <info> biostar exit. restart biostar process.
+20/12/04 18:18:54.156571: <info> biostar exit. restart biostar process.
+20/12/04 18:18:59.156576: <info> biostar exit. restart biostar process.
+20/12/04 18:19:04.172242: <info> biostar exit. restart biostar process.
+20/12/04 18:19:09.203793: <info> biostar exit. restart biostar process.
+20/12/04 18:19:13.926169: <info> BS2ServiceHandler state: 1 type:0
+20/12/04 18:19:13.926169: <info> BS2ServiceHandlerEx lpContext = CGIServer
+20/12/04 18:19:13.926169: <info> BS2StartBiostarServer Stop Log
+20/12/04 18:19:13.926169: <info> command stop biostar
+20/12/04 18:19:13.926169: <info> stopBiostar: req_set_biostar_stop
+20/12/04 18:19:13.926169: <info> waitForExitBiostar. exit biostar success.
+20/12/04 18:19:13.926169: <info> Launcher Service End!
+20/12/04 18:19:16.254299: <info> biostar_restart_wait_time_in_seconds_ is set to 5
+20/12/04 18:19:16.254299: <trace> biostar version : 2.8.6.38
+20/12/04 18:19:16.254299: <trace> ac version : 2.8.6.92
+20/12/04 18:19:16.254299: <trace> ta version : 2.8.6.63
+20/12/04 18:19:16.254299: <info> ================= launcher start ====================
+20/12/04 18:19:16.785552: <info> launcher service name:BioStar 2 Launcher(x64)
+20/12/04 18:19:16.785552: <info> BS2ServiceMain Func Start Log
+20/12/04 18:19:16.785552: <info> RegisterServiceCtrlHandler success
+20/12/04 18:19:16.785552: <info> Launcher Service Start!
+20/12/04 18:19:16.785552: <info> FixedErrorFiles. std exception - code:./repair.dat: cannot open file
+20/12/04 18:19:16.785552: <info> BS2StartBiostarServer Start Log
+20/12/04 18:19:21.848064: <info> biostar exit. restart biostar process.
+20/12/04 18:19:26.848100: <info> biostar exit. restart biostar process.
+20/12/04 18:19:31.863725: <info> biostar exit. restart biostar process.
+20/12/04 18:19:36.866856: <info> biostar exit. restart biostar process.
+20/12/04 18:19:41.866860: <info> biostar exit. restart biostar process.
+20/12/04 18:19:46.866873: <info> biostar exit. restart biostar process.
+20/12/04 18:19:51.882508: <info> biostar exit. restart biostar process.
+20/12/04 18:19:56.883714: <info> biostar exit. restart biostar process.
+20/12/04 18:20:01.899325: <info> biostar exit. restart biostar process.
+20/12/04 18:20:06.899839: <info> biostar exit. restart biostar process.
+20/12/04 18:20:11.915473: <info> biostar exit. restart biostar process.
+20/12/04 18:20:16.947452: <info> biostar exit. restart biostar process.
+20/12/04 18:20:21.963528: <info> biostar exit. restart biostar process.
+20/12/04 18:20:26.979083: <info> biostar exit. restart biostar process.
+20/12/04 18:20:31.979102: <info> biostar exit. restart biostar process.
+20/12/04 18:20:37.010353: <info> biostar exit. restart biostar process.
+20/12/04 18:20:42.074314: <info> biostar exit. restart biostar process.
+20/12/04 18:20:47.092335: <info> biostar exit. restart biostar process.
+20/12/04 18:20:52.107985: <info> biostar exit. restart biostar process.
+20/12/04 18:20:57.107986: <info> biostar exit. restart biostar process.
+20/12/04 18:21:02.108001: <info> biostar exit. restart biostar process.
+20/12/04 18:21:07.109138: <info> biostar exit. restart biostar process.
+20/12/04 18:21:12.124776: <info> biostar exit. restart biostar process.
+20/12/04 18:21:17.125401: <info> biostar exit. restart biostar process.
+20/12/04 18:21:22.125422: <info> biostar exit. restart biostar process.
+20/12/04 18:21:27.156693: <info> biostar exit. restart biostar process.
+20/12/04 18:21:32.173487: <info> biostar exit. restart biostar process.
+20/12/04 18:21:37.173519: <info> biostar exit. restart biostar process.
+20/12/04 18:21:42.204757: <info> biostar exit. restart biostar process.
+20/12/04 18:21:47.236044: <info> biostar exit. restart biostar process.
+20/12/04 18:21:52.238459: <info> biostar exit. restart biostar process.
+20/12/04 18:21:57.254096: <info> biostar exit. restart biostar process.
+20/12/04 18:22:02.379126: <info> biostar exit. restart biostar process.
+20/12/04 18:22:07.394761: <info> biostar exit. restart biostar process.
+20/12/04 18:22:12.488501: <info> biostar exit. restart biostar process.
+20/12/04 18:22:17.582094: <info> biostar exit. restart biostar process.
+20/12/04 18:22:22.629000: <info> biostar exit. restart biostar process.
+20/12/04 18:22:27.644616: <info> biostar exit. restart biostar process.
+20/12/04 18:22:32.754541: <info> biostar exit. restart biostar process.
+20/12/04 18:22:37.754582: <info> biostar exit. restart biostar process.
+20/12/04 18:22:42.786754: <info> biostar exit. restart biostar process.
+20/12/04 18:22:47.864897: <info> biostar exit. restart biostar process.
+20/12/04 18:22:52.864908: <info> biostar exit. restart biostar process.
+20/12/04 18:22:57.880570: <info> biostar exit. restart biostar process.
+20/12/04 18:23:02.899071: <info> biostar exit. restart biostar process.
+20/12/04 18:23:07.901824: <info> biostar exit. restart biostar process.
+20/12/04 18:23:12.917196: <info> biostar exit. restart biostar process.
+20/12/04 18:23:17.925569: <info> biostar exit. restart biostar process.
+20/12/04 18:23:22.972472: <info> biostar exit. restart biostar process.
+20/12/04 18:23:27.976873: <info> biostar exit. restart biostar process.
+20/12/04 18:23:32.987229: <info> biostar exit. restart biostar process.
+20/12/04 18:23:37.987246: <info> biostar exit. restart biostar process.
+20/12/04 18:23:42.987255: <info> biostar exit. restart biostar process.
+20/12/04 18:23:48.002671: <info> biostar exit. restart biostar process.
+20/12/04 18:23:53.002706: <info> biostar exit. restart biostar process.
+20/12/04 18:23:58.018320: <info> biostar exit. restart biostar process.
+20/12/04 18:24:03.065213: <info> biostar exit. restart biostar process.
+20/12/04 18:24:08.066370: <info> biostar exit. restart biostar process.
+20/12/04 18:24:13.081770: <info> biostar exit. restart biostar process.
+20/12/04 18:24:18.081794: <info> biostar exit. restart biostar process.
+20/12/04 18:24:23.081811: <info> biostar exit. restart biostar process.
+20/12/04 18:24:28.081822: <info> biostar exit. restart biostar process.
+20/12/04 18:24:33.097448: <info> biostar exit. restart biostar process.
+20/12/04 18:24:38.098672: <info> biostar exit. restart biostar process.
+20/12/04 18:24:43.161176: <info> biostar exit. restart biostar process.
+20/12/04 18:24:48.176817: <info> biostar exit. restart biostar process.
+20/12/04 18:24:53.176850: <info> biostar exit. restart biostar process.
+20/12/04 18:24:58.301043: <info> biostar exit. restart biostar process.
+20/12/04 18:25:03.301050: <info> biostar exit. restart biostar process.
+20/12/04 18:25:08.301088: <info> biostar exit. restart biostar process.
+20/12/04 18:25:13.316702: <info> biostar exit. restart biostar process.
+20/12/04 18:25:18.319028: <info> biostar exit. restart biostar process.
+20/12/04 18:25:23.335005: <info> biostar exit. restart biostar process.
+20/12/04 18:25:28.350654: <info> biostar exit. restart biostar process.
+20/12/04 18:25:33.366296: <info> biostar exit. restart biostar process.
+20/12/04 18:25:38.366721: <info> biostar exit. restart biostar process.
+20/12/04 18:25:43.460470: <info> biostar exit. restart biostar process.
+20/12/04 18:25:48.463895: <info> biostar exit. restart biostar process.
+20/12/04 18:25:53.464957: <info> biostar exit. restart biostar process.
+20/12/04 18:25:58.480609: <info> biostar exit. restart biostar process.
+20/12/04 18:26:03.527473: <info> biostar exit. restart biostar process.
+20/12/04 18:26:08.528915: <info> biostar exit. restart biostar process.
+20/12/04 18:26:13.669549: <info> biostar exit. restart biostar process.
+20/12/04 18:26:18.685182: <info> biostar exit. restart biostar process.
+20/12/04 18:26:23.685201: <info> biostar exit. restart biostar process.
+20/12/04 18:26:28.686293: <info> biostar exit. restart biostar process.
+20/12/04 18:26:33.688189: <info> biostar exit. restart biostar process.
+20/12/04 18:26:38.703559: <info> biostar exit. restart biostar process.
+20/12/04 18:26:43.703581: <info> biostar exit. restart biostar process.
+20/12/04 18:26:48.703583: <info> biostar exit. restart biostar process.
+20/12/04 18:26:53.859742: <info> biostar exit. restart biostar process.
+20/12/04 18:26:58.859751: <info> biostar exit. restart biostar process.
+20/12/04 18:27:03.859754: <info> biostar exit. restart biostar process.
+20/12/04 18:27:08.859764: <info> biostar exit. restart biostar process.
+20/12/04 18:27:13.891026: <info> biostar exit. restart biostar process.
+20/12/04 18:27:18.907419: <info> biostar exit. restart biostar process.
+20/12/04 18:27:23.907445: <info> biostar exit. restart biostar process.
+20/12/04 18:27:28.907449: <info> biostar exit. restart biostar process.
+20/12/04 18:27:33.907849: <info> biostar exit. restart biostar process.
+20/12/04 18:27:38.939098: <info> biostar exit. restart biostar process.
+20/12/04 18:27:43.970757: <info> biostar exit. restart biostar process.
+20/12/04 18:27:49.096683: <info> biostar exit. restart biostar process.
+20/12/04 18:27:54.112311: <info> biostar exit. restart biostar process.
+20/12/04 18:27:59.112341: <info> biostar exit. restart biostar process.
+20/12/04 18:28:04.128599: <info> biostar exit. restart biostar process.
+20/12/04 18:28:09.347369: <info> biostar exit. restart biostar process.
+20/12/04 18:28:14.409875: <info> biostar exit. restart biostar process.
+20/12/04 18:28:19.409905: <info> biostar exit. restart biostar process.
+20/12/04 18:28:24.488088: <info> biostar exit. restart biostar process.
+20/12/04 18:28:29.521593: <info> biostar exit. restart biostar process.
+20/12/04 18:28:34.537208: <info> biostar exit. restart biostar process.
+20/12/04 18:28:39.584101: <info> biostar exit. restart biostar process.
+20/12/04 18:28:44.584106: <info> biostar exit. restart biostar process.
+20/12/04 18:28:49.646122: <info> biostar exit. restart biostar process.
+20/12/04 18:28:54.880535: <info> biostar exit. restart biostar process.
+20/12/04 18:28:59.880774: <info> biostar exit. restart biostar process.
+20/12/04 18:29:04.880813: <info> biostar exit. restart biostar process.
+20/12/04 18:29:09.974549: <info> biostar exit. restart biostar process.
+20/12/04 18:29:15.039948: <info> biostar exit. restart biostar process.
+20/12/04 18:29:20.039961: <info> biostar exit. restart biostar process.
+20/12/04 18:29:25.071235: <info> biostar exit. restart biostar process.
+20/12/04 18:29:30.102517: <info> biostar exit. restart biostar process.
+20/12/04 18:29:35.103268: <info> biostar exit. restart biostar process.
+20/12/04 18:29:40.105485: <info> biostar exit. restart biostar process.
+20/12/04 18:29:45.105498: <info> biostar exit. restart biostar process.
+20/12/04 18:29:50.121340: <info> biostar exit. restart biostar process.
+20/12/04 18:29:55.121354: <info> biostar exit. restart biostar process.
+20/12/04 18:30:00.155458: <info> biostar exit. restart biostar process.
+20/12/04 18:30:05.155475: <info> biostar exit. restart biostar process.
+20/12/04 18:30:10.186728: <info> biostar exit. restart biostar process.
+20/12/04 18:30:15.233615: <info> biostar exit. restart biostar process.
+20/12/04 18:30:20.233643: <info> biostar exit. restart biostar process.
+20/12/04 18:30:25.234099: <info> biostar exit. restart biostar process.
+20/12/04 18:30:30.249748: <info> biostar exit. restart biostar process.
+20/12/04 18:30:35.281021: <info> biostar exit. restart biostar process.
+20/12/04 18:30:40.281048: <info> biostar exit. restart biostar process.
+20/12/04 18:30:45.285485: <info> biostar exit. restart biostar process.
+20/12/04 18:30:50.301144: <info> biostar exit. restart biostar process.
+20/12/04 18:30:55.316801: <info> biostar exit. restart biostar process.
+20/12/04 18:31:00.348016: <info> biostar exit. restart biostar process.
+20/12/04 18:31:05.348026: <info> biostar exit. restart biostar process.
+20/12/04 18:31:10.348070: <info> biostar exit. restart biostar process.
+20/12/04 18:31:15.363701: <info> biostar exit. restart biostar process.
+20/12/04 18:31:20.379339: <info> biostar exit. restart biostar process.
+20/12/04 18:31:25.426233: <info> biostar exit. restart biostar process.
+20/12/04 18:31:30.441875: <info> biostar exit. restart biostar process.
+20/12/04 18:31:35.463934: <info> biostar exit. restart biostar process.
+20/12/04 18:31:40.479570: <info> biostar exit. restart biostar process.
+20/12/04 18:31:45.479581: <info> biostar exit. restart biostar process.
+20/12/04 18:31:50.495218: <info> biostar exit. restart biostar process.
+20/12/04 18:31:55.498525: <info> biostar exit. restart biostar process.
+20/12/04 18:32:00.529810: <info> biostar exit. restart biostar process.
+20/12/04 18:32:05.545424: <info> biostar exit. restart biostar process.
+20/12/04 18:32:10.686516: <info> biostar exit. restart biostar process.
+20/12/04 18:32:15.812304: <info> biostar exit. restart biostar process.
+20/12/04 18:32:20.812835: <info> biostar exit. restart biostar process.
+20/12/04 18:32:25.828445: <info> biostar exit. restart biostar process.
+20/12/04 18:32:30.828449: <info> biostar exit. restart biostar process.
+20/12/04 18:32:35.828478: <info> biostar exit. restart biostar process.
+20/12/04 18:32:40.830314: <info> biostar exit. restart biostar process.
+20/12/04 18:32:45.861577: <info> biostar exit. restart biostar process.
+20/12/04 18:32:50.877675: <info> biostar exit. restart biostar process.
+20/12/04 18:32:55.877716: <info> biostar exit. restart biostar process.
+20/12/04 18:33:00.908946: <info> biostar exit. restart biostar process.
+20/12/04 18:33:05.926379: <info> biostar exit. restart biostar process.
+20/12/04 18:33:10.926656: <info> biostar exit. restart biostar process.
+20/12/04 18:33:15.942292: <info> biostar exit. restart biostar process.
+20/12/04 18:33:20.942360: <info> biostar exit. restart biostar process.
+20/12/04 18:33:25.957967: <info> biostar exit. restart biostar process.
+20/12/04 18:33:31.193216: <info> biostar exit. restart biostar process.
+20/12/04 18:33:36.193263: <info> biostar exit. restart biostar process.
+20/12/04 18:33:41.208853: <info> biostar exit. restart biostar process.
+20/12/04 18:33:46.224491: <info> biostar exit. restart biostar process.
+20/12/04 18:33:51.241951: <info> biostar exit. restart biostar process.
+20/12/04 18:33:56.257584: <info> biostar exit. restart biostar process.
+20/12/04 18:34:01.257612: <info> biostar exit. restart biostar process.
+20/12/04 18:34:06.273210: <info> biostar exit. restart biostar process.
+20/12/04 18:34:11.273245: <info> biostar exit. restart biostar process.
+20/12/04 18:34:16.273521: <info> biostar exit. restart biostar process.
+20/12/04 18:34:21.273559: <info> biostar exit. restart biostar process.
+20/12/04 18:34:26.304832: <info> biostar exit. restart biostar process.
+20/12/04 18:34:31.351697: <info> biostar exit. restart biostar process.
+20/12/04 18:34:36.398605: <info> biostar exit. restart biostar process.
+20/12/04 18:34:41.398768: <info> biostar exit. restart biostar process.
+20/12/04 18:34:46.398796: <info> biostar exit. restart biostar process.
+20/12/04 18:34:51.398806: <info> biostar exit. restart biostar process.
+20/12/04 18:34:56.445674: <info> biostar exit. restart biostar process.
+20/12/04 18:35:01.461384: <info> biostar exit. restart biostar process.
+20/12/04 18:35:06.461395: <info> biostar exit. restart biostar process.
+20/12/04 18:35:11.461921: <info> biostar exit. restart biostar process.
+20/12/04 18:35:16.461937: <info> biostar exit. restart biostar process.
+20/12/04 18:35:21.461960: <info> biostar exit. restart biostar process.
+20/12/04 18:35:26.464202: <info> biostar exit. restart biostar process.
+20/12/04 18:35:31.464214: <info> biostar exit. restart biostar process.
+20/12/04 18:35:36.495465: <info> biostar exit. restart biostar process.
+20/12/04 18:35:41.511089: <info> biostar exit. restart biostar process.
+20/12/04 18:35:46.546482: <info> biostar exit. restart biostar process.
+20/12/04 18:35:51.546504: <info> biostar exit. restart biostar process.
+20/12/04 18:35:56.562135: <info> biostar exit. restart biostar process.
+20/12/04 18:36:01.562150: <info> biostar exit. restart biostar process.
+20/12/04 18:36:06.593398: <info> biostar exit. restart biostar process.
+20/12/04 18:36:11.593919: <info> biostar exit. restart biostar process.
+20/12/04 18:36:16.609570: <info> biostar exit. restart biostar process.
+20/12/04 18:36:21.718940: <info> biostar exit. restart biostar process.
+20/12/04 18:36:26.718959: <info> biostar exit. restart biostar process.
+20/12/04 18:36:31.812716: <info> biostar exit. restart biostar process.
+20/12/04 18:36:36.813242: <info> biostar exit. restart biostar process.
+20/12/04 18:36:41.828863: <info> biostar exit. restart biostar process.
+20/12/04 18:36:46.828891: <info> biostar exit. restart biostar process.
+20/12/04 18:36:51.828914: <info> biostar exit. restart biostar process.
+20/12/04 18:36:57.050722: <info> biostar exit. restart biostar process.
+20/12/04 18:37:02.050733: <info> biostar exit. restart biostar process.
+20/12/04 18:37:07.050757: <info> biostar exit. restart biostar process.
+20/12/04 18:37:12.051421: <info> biostar exit. restart biostar process.
+20/12/04 18:37:17.051451: <info> biostar exit. restart biostar process.
+20/12/04 18:37:22.116669: <info> biostar exit. restart biostar process.
+20/12/04 18:37:27.116700: <info> biostar exit. restart biostar process.
+20/12/04 18:37:32.116700: <info> biostar exit. restart biostar process.
+20/12/04 18:37:37.132349: <info> biostar exit. restart biostar process.
+20/12/04 18:37:42.135052: <info> biostar exit. restart biostar process.
+20/12/04 18:37:47.135079: <info> biostar exit. restart biostar process.
+20/12/04 18:37:52.260087: <info> biostar exit. restart biostar process.
+20/12/04 18:37:57.275703: <info> biostar exit. restart biostar process.
+20/12/04 18:38:02.291359: <info> biostar exit. restart biostar process.
+20/12/04 18:38:07.412129: <info> biostar exit. restart biostar process.
+20/12/04 18:38:12.427749: <info> biostar exit. restart biostar process.
+20/12/04 18:38:17.428289: <info> biostar exit. restart biostar process.
+20/12/04 18:38:22.428312: <info> biostar exit. restart biostar process.
+20/12/04 18:38:27.443944: <info> biostar exit. restart biostar process.
+20/12/04 18:38:32.459216: <info> biostar exit. restart biostar process.
+20/12/04 18:38:37.474800: <info> biostar exit. restart biostar process.
+20/12/04 18:38:42.490408: <info> biostar exit. restart biostar process.
+20/12/04 18:38:47.490719: <info> biostar exit. restart biostar process.
+20/12/04 18:38:52.491935: <info> biostar exit. restart biostar process.
+20/12/04 18:38:57.491985: <info> biostar exit. restart biostar process.
+20/12/04 18:39:02.601328: <info> biostar exit. restart biostar process.
+20/12/04 18:39:07.601344: <info> biostar exit. restart biostar process.
+20/12/04 18:39:12.601356: <info> biostar exit. restart biostar process.
+20/12/04 18:39:17.632016: <info> biostar exit. restart biostar process.
+20/12/04 18:39:22.647668: <info> biostar exit. restart biostar process.
+20/12/04 18:39:27.647679: <info> biostar exit. restart biostar process.
+20/12/04 18:39:32.741435: <info> biostar exit. restart biostar process.
+20/12/04 18:39:37.757090: <info> biostar exit. restart biostar process.
+20/12/04 18:39:42.788325: <info> biostar exit. restart biostar process.
+20/12/04 18:39:47.788350: <info> biostar exit. restart biostar process.
+20/12/04 18:39:52.835221: <info> biostar exit. restart biostar process.
+20/12/04 18:39:57.913374: <info> biostar exit. restart biostar process.
+20/12/04 18:40:02.930239: <info> biostar exit. restart biostar process.
+20/12/04 18:40:07.930252: <info> biostar exit. restart biostar process.
+20/12/04 18:40:12.961511: <info> biostar exit. restart biostar process.
+20/12/04 18:40:17.961522: <info> biostar exit. restart biostar process.
+20/12/04 18:40:22.961536: <info> biostar exit. restart biostar process.
+20/12/04 18:40:27.964279: <info> biostar exit. restart biostar process.
+20/12/04 18:40:32.964304: <info> biostar exit. restart biostar process.
+20/12/04 18:40:37.965247: <info> biostar exit. restart biostar process.
+20/12/04 18:40:43.090249: <info> biostar exit. restart biostar process.
+20/12/04 18:40:48.091357: <info> biostar exit. restart biostar process.
+20/12/04 18:40:53.106989: <info> biostar exit. restart biostar process.
+20/12/04 18:40:58.138288: <info> biostar exit. restart biostar process.
+20/12/04 18:41:03.153886: <info> biostar exit. restart biostar process.
+20/12/04 18:41:08.169531: <info> biostar exit. restart biostar process.
+20/12/04 18:41:13.170390: <info> biostar exit. restart biostar process.
+20/12/04 18:41:18.186049: <info> biostar exit. restart biostar process.
+20/12/04 18:41:23.186053: <info> biostar exit. restart biostar process.
+20/12/04 18:41:28.232968: <info> biostar exit. restart biostar process.
+20/12/04 18:41:33.265202: <info> biostar exit. restart biostar process.
+20/12/04 18:41:38.268809: <info> biostar exit. restart biostar process.
+20/12/04 18:41:43.346916: <info> biostar exit. restart biostar process.
+20/12/04 18:41:48.489836: <info> biostar exit. restart biostar process.
+20/12/04 18:41:53.646126: <info> biostar exit. restart biostar process.
+20/12/04 18:41:58.726152: <info> biostar exit. restart biostar process.
+20/12/04 18:42:03.741797: <info> biostar exit. restart biostar process.
+20/12/04 18:42:08.741824: <info> biostar exit. restart biostar process.
+20/12/04 18:42:13.757438: <info> biostar exit. restart biostar process.
+20/12/04 18:42:18.788699: <info> biostar exit. restart biostar process.
+20/12/04 18:42:23.791836: <info> biostar exit. restart biostar process.
+20/12/04 18:42:28.791857: <info> biostar exit. restart biostar process.
+20/12/04 18:42:33.807468: <info> biostar exit. restart biostar process.
+20/12/04 18:42:38.823105: <info> biostar exit. restart biostar process.
+20/12/04 18:42:43.838726: <info> biostar exit. restart biostar process.
+20/12/04 18:42:48.855798: <info> biostar exit. restart biostar process.
+20/12/04 18:42:53.855814: <info> biostar exit. restart biostar process.
+20/12/04 18:42:58.855832: <info> biostar exit. restart biostar process.
+20/12/04 18:43:03.887072: <info> biostar exit. restart biostar process.
+20/12/04 18:43:08.903620: <info> biostar exit. restart biostar process.
+20/12/04 18:43:14.059883: <info> biostar exit. restart biostar process.
+20/12/04 18:43:19.059898: <info> biostar exit. restart biostar process.
+20/12/04 18:43:24.059913: <info> biostar exit. restart biostar process.
+20/12/04 18:43:29.153683: <info> biostar exit. restart biostar process.
+20/12/04 18:43:34.154705: <info> biostar exit. restart biostar process.
+20/12/04 18:43:39.170333: <info> biostar exit. restart biostar process.
+20/12/04 18:43:44.185954: <info> biostar exit. restart biostar process.
+20/12/04 18:43:49.310968: <info> biostar exit. restart biostar process.
+20/12/04 18:43:54.311833: <info> biostar exit. restart biostar process.
+20/12/04 18:43:59.311858: <info> biostar exit. restart biostar process.
+20/12/04 18:44:04.327455: <info> biostar exit. restart biostar process.
+20/12/04 18:44:09.327472: <info> biostar exit. restart biostar process.
+20/12/04 18:44:14.327475: <info> biostar exit. restart biostar process.
+20/12/04 18:44:19.358281: <info> biostar exit. restart biostar process.
+20/12/04 18:44:24.389555: <info> biostar exit. restart biostar process.
+20/12/04 18:44:29.389565: <info> biostar exit. restart biostar process.
+20/12/04 18:44:34.406102: <info> biostar exit. restart biostar process.
+20/12/04 18:44:39.406120: <info> biostar exit. restart biostar process.
+20/12/04 18:44:44.423646: <info> biostar exit. restart biostar process.
+20/12/04 18:44:49.485736: <info> biostar exit. restart biostar process.
+20/12/04 18:44:54.501365: <info> biostar exit. restart biostar process.
+20/12/04 18:44:59.501420: <info> biostar exit. restart biostar process.
+20/12/04 18:45:04.506027: <info> biostar exit. restart biostar process.
+20/12/04 18:45:09.521648: <info> biostar exit. restart biostar process.
+20/12/04 18:45:14.599774: <info> biostar exit. restart biostar process.
+20/12/04 18:45:19.693768: <info> biostar exit. restart biostar process.
+20/12/04 18:45:24.709419: <info> biostar exit. restart biostar process.
+20/12/04 18:45:27.882479: <info> BS2ServiceHandler state: 1 type:0
+20/12/04 18:45:27.882479: <info> BS2ServiceHandlerEx lpContext = CGIServer
+20/12/04 18:45:27.882479: <info> BS2StartBiostarServer Stop Log
+20/12/04 18:45:27.882479: <info> command stop biostar
+20/12/04 18:45:27.882479: <info> stopBiostar: req_set_biostar_stop
+20/12/04 18:45:27.882479: <info> waitForExitBiostar. exit biostar success.
+20/12/04 18:45:27.882479: <info> Launcher Service End!
+20/12/04 18:45:29.210615: <info> biostar_restart_wait_time_in_seconds_ is set to 5
+20/12/04 18:45:29.210615: <trace> biostar version : 2.8.6.38
+20/12/04 18:45:29.210615: <trace> ac version : 2.8.6.92
+20/12/04 18:45:29.210615: <trace> ta version : 2.8.6.63
+20/12/04 18:45:29.210615: <info> ================= launcher start ====================
+20/12/04 18:45:29.726234: <info> launcher service name:BioStar 2 Launcher(x64)
+20/12/04 18:45:29.726234: <info> BS2ServiceMain Func Start Log
+20/12/04 18:45:29.726234: <info> RegisterServiceCtrlHandler success
+20/12/04 18:45:29.726234: <info> Launcher Service Start!
+20/12/04 18:45:29.726234: <info> FixedErrorFiles. std exception - code:./repair.dat: cannot open file
+20/12/04 18:45:29.726234: <info> BS2StartBiostarServer Start Log
+20/12/04 18:45:34.726251: <info> biostar exit. restart biostar process.
+20/12/04 18:45:39.741895: <info> biostar exit. restart biostar process.
+20/12/04 18:45:44.741895: <info> biostar exit. restart biostar process.
+20/12/04 18:45:49.757405: <info> biostar exit. restart biostar process.
+20/12/04 18:45:54.773043: <info> biostar exit. restart biostar process.
+20/12/04 18:45:59.804518: <info> biostar exit. restart biostar process.
+20/12/04 18:46:04.835765: <info> biostar exit. restart biostar process.
+20/12/04 18:46:05.867013: <info> biostar_restart_wait_time_in_seconds_ is set to 5
+20/12/04 18:46:05.882639: <trace> biostar version : 2.8.6.38
+20/12/04 18:46:05.882639: <trace> ac version : 2.8.6.92
+20/12/04 18:46:05.898267: <trace> ta version : 2.8.6.63
+20/12/04 18:46:05.898267: <info> ================= launcher start ====================
+20/12/04 18:46:06.429525: <info> launcher service name:BioStar 2 Launcher(x64)
+20/12/04 18:46:09.835777: <info> biostar exit. restart biostar process.
+20/12/04 18:46:09.960773: <info> biostar_restart_wait_time_in_seconds_ is set to 5
+20/12/04 18:46:09.976398: <trace> biostar version : 2.8.6.38
+20/12/04 18:46:09.992024: <trace> ac version : 2.8.6.92
+20/12/04 18:46:09.992024: <trace> ta version : 2.8.6.63
+20/12/04 18:46:09.992024: <info> ================= launcher start ====================
+20/12/04 18:46:10.523274: <info> launcher service name:BioStar 2 Launcher(x64)
+20/12/04 18:46:14.837368: <info> biostar exit. restart biostar process.
+20/12/04 18:46:19.837379: <info> biostar exit. restart biostar process.
+20/12/04 18:46:24.837390: <info> biostar exit. restart biostar process.
+20/12/04 18:46:29.853048: <info> biostar exit. restart biostar process.
+20/12/04 18:46:34.884297: <info> biostar exit. restart biostar process.
+20/12/04 18:46:39.899754: <info> biostar exit. restart biostar process.
+20/12/04 18:46:44.915879: <info> biostar exit. restart biostar process.
+20/12/04 18:46:49.931525: <info> biostar exit. restart biostar process.
+20/12/04 18:46:54.947150: <info> biostar exit. restart biostar process.
+20/12/04 18:46:59.947618: <info> biostar exit. restart biostar process.
+20/12/04 18:47:04.963256: <info> biostar exit. restart biostar process.
+20/12/04 18:47:09.989971: <info> biostar exit. restart biostar process.
+20/12/04 18:47:15.000634: <info> biostar exit. restart biostar process.
+20/12/04 18:47:20.008623: <info> biostar exit. restart biostar process.
+20/12/04 18:47:25.023766: <info> biostar exit. restart biostar process.
+20/12/04 18:47:30.039397: <info> biostar exit. restart biostar process.
+20/12/04 18:47:35.039398: <info> biostar exit. restart biostar process.
+20/12/04 18:47:40.039964: <info> biostar exit. restart biostar process.
+20/12/04 18:47:45.039986: <info> biostar exit. restart biostar process.
+20/12/04 18:47:50.042104: <info> biostar exit. restart biostar process.
+20/12/04 18:47:55.088994: <info> biostar exit. restart biostar process.
+20/12/04 18:48:00.104641: <info> biostar exit. restart biostar process.
+20/12/04 18:48:05.104736: <info> biostar exit. restart biostar process.
+20/12/04 18:48:10.120338: <info> biostar exit. restart biostar process.
+20/12/04 18:48:15.151602: <info> biostar exit. restart biostar process.
+20/12/04 18:48:20.151613: <info> biostar exit. restart biostar process.
+20/12/04 18:48:25.276621: <info> biostar exit. restart biostar process.
+20/12/04 18:48:30.292275: <info> biostar exit. restart biostar process.
+20/12/04 18:48:35.297076: <info> biostar exit. restart biostar process.
+20/12/04 18:48:40.328526: <info> biostar exit. restart biostar process.
+20/12/04 18:48:45.343975: <info> biostar exit. restart biostar process.
+20/12/04 18:48:50.359597: <info> biostar exit. restart biostar process.
+20/12/04 18:48:55.391932: <info> biostar exit. restart biostar process.
+20/12/04 18:49:00.391944: <info> biostar exit. restart biostar process.
+20/12/04 18:49:05.391963: <info> biostar exit. restart biostar process.
+20/12/04 18:49:10.407602: <info> biostar exit. restart biostar process.
+20/12/04 18:49:15.407603: <info> biostar exit. restart biostar process.
+20/12/04 18:49:20.442593: <info> biostar exit. restart biostar process.
+20/12/04 18:49:25.442617: <info> biostar exit. restart biostar process.
+20/12/04 18:49:30.458263: <info> biostar exit. restart biostar process.
+20/12/04 18:49:35.505130: <info> biostar exit. restart biostar process.
+20/12/04 18:49:40.505139: <info> biostar exit. restart biostar process.
+20/12/04 18:49:45.536147: <info> biostar exit. restart biostar process.
+20/12/04 18:49:50.536172: <info> biostar exit. restart biostar process.
+20/12/04 18:49:55.536177: <info> biostar exit. restart biostar process.
+20/12/04 18:50:00.583053: <info> biostar exit. restart biostar process.
+20/12/04 18:50:05.632724: <info> biostar exit. restart biostar process.

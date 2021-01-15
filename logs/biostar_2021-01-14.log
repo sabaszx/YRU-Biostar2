@@ -1,0 +1,599 @@
+21/01/14 00:00:23.414712 E <SYS> [0x00000b2c] Cannot execute the command: SELECT * FROM (
+            SELECT  LG.EVTLGUID ,                                              
+                    LG.SRVDT    ,                                              
+                    LG.DEVDT    ,                                              
+                    LG.DEVUID   ,                                              
+                    LG.DEVLGIDX ,                                              
+                    LG.IMGLGUID ,                                              
+                    LG.USRID   USRID,                                              
+                    LG.EVT      ,                                              
+                    LG.CRDSL    ,                                              
+                    LG.TNAKEY   ,                                              
+                    LG.DRUID    ,                                              
+                    DR.NM AS DRNM,											  
+                    LG.ZNUID    ,                                              
+                    LG.DEVUID   DEVID,                                         
+                    DEV.NM    DEVNM, 
+                    USR.NM  USRNM ,                                               
+                    LG.USRGRUID,                                               
+                    UGR.NM      UGRNM,                                         
+                    EVT.NM      EVTNM,					
+                    LG.DRUID1   DRUID1,                                              
+                    DR1.NM       DRNM1,                                          
+                    LG.DRUID2   DRUID2,                                              
+                    DR2.NM       DRNM2,                                          
+                    LG.DRUID3   DRUID3,                                              
+                    DR3.NM       DRNM3,                                          
+                    EV.NM       EVNM,                                          
+                    TAKEY.CAP   TNACAP,                                          
+                    ZN.NM       ZNNM,                                           
+CASE WHEN DEV.DEVGRUID IS NULL THEN(SELECT PRNT.DEVGRUID FROM T_DEV PRNT, T_DEV CHLD WHERE CHLD.PARENTDEVID = PRNT.DEVID AND CHLD.DEVID = LG.DEVUID) ELSE DEV.DEVGRUID END AS DEVGRUID, 
+DR.DRGRUID, 
+DR1.DRGRUID DRGRUID1, 
+DR2.DRGRUID DRGRUID2, 
+DR3.DRGRUID DRGRUID3, 
+ZN.TYP, 
+EV.ELVTGRUID, 
+EV.ELVTUID ELVTUID, 
+IS_DST, 
+TMZN_HALF, 
+TMZN_HOUR, 
+TMZN_NEGTV, 
+USRUDTBYDEV, 
+HINT, 
+TEMPER 
+  
+		               FROM ( 
+SELECT L.* FROM T_LG202101 L 
+ WHERE L.DEVDT BETWEEN 1610557200 AND 1610643599 
+ ORDER BY L.HINT DESC LIMIT 51 OFFSET 0  ) LG												
+                    LEFT OUTER JOIN T_DEV        DEV ON LG.DEVUID = DEV.DEVID  
+                    LEFT OUTER JOIN T_TAKEY      TAKEY ON (LG.DEVUID = TAKEY.DEVUID AND LG.TNAKEY = TAKEY.IDX + 1) 
+                    LEFT OUTER JOIN T_EVTTYP     EVT ON EVT.EVT   = LG.EVT     
+                    LEFT OUTER JOIN T_USR   USR ON LG.USRID     = USR.USRID    
+                    LEFT OUTER JOIN T_USRGR UGR ON LG.USRGRUID  = UGR.USRGRUID 
+                    LEFT OUTER JOIN T_DR	   DR  ON LG.DRUID     = DR.DRUID     
+                    LEFT OUTER JOIN T_DR	   DR1  ON LG.DRUID1     = DR1.DRUID     
+                    LEFT OUTER JOIN T_DR	   DR2  ON LG.DRUID2     = DR2.DRUID     
+                    LEFT OUTER JOIN T_DR	   DR3  ON LG.DRUID3     = DR3.DRUID     
+                    LEFT OUTER JOIN T_ELVT  EV  ON LG.DRUID     = EV.ELVTUID   
+                    LEFT OUTER JOIN T_ZN    ZN  ON LG.ZNUID     = ZN.ZNUID     ) LG 
+ ORDER BY  HINT DESC
+Table 'biostar2_ac.t_lg202101' doesn't exist
+21/01/14 00:00:24.524088 E <SYS> [0x00000c94] Cannot execute the command: 
+ SELECT COUNT(*) FROM 
+          ( SELECT  LG.EVTLGUID ,                                              
+                    LG.SRVDT    ,                                              
+                    LG.DEVDT    ,                                              
+                    LG.DEVUID   ,                                              
+                    LG.DEVLGIDX ,                                              
+                    LG.IMGLGUID ,                                              
+                    LG.USRID   USRID,                                              
+                    LG.EVT      ,                                              
+                    LG.CRDSL    ,                                              
+                    LG.TNAKEY   ,                                              
+                    LG.DRUID    ,                                              
+                    DR.NM AS DRNM,											  
+                    LG.DRUID1    ,                                              
+                    LG.DRUID2    ,                                              
+                    LG.DRUID3    ,                                              
+                    LG.ZNUID    ,                                              
+                    DEV.DEVID   ,                                              
+                    DEV.NM      DEVNM,                                         
+                    USR.USRID   USERID,                                              
+                    USR.NM      USRNM,                                         
+                    UGR.USRGRUID,                                              
+                    UGR.NM      UGRNM,                                         
+                    EVT.NM      EVTNM,                                         
+                    DR1.NM       DRNM1,                                          
+                    DR2.NM       DRNM2,                                          
+                    DR3.NM       DRNM3,                                          
+                    ZN.NM       ZNNM,                                          
+                    LG.ACKDT    ACKDT,                                         
+                    LG.ACKMSG   ACKMSG,                                        
+                    LG.ACKACT   ACKACT,                                        
+                    LG.ACKUSRID ACKUSRID,                                      
+                    LG.USRUDTBYDEV USRUDTBYDEV,                                      
+                    ACKUSR.NM   ACKUSRNM                                       
+               FROM ( 
+ SELECT ALT.ACKDT, ALT.ACKMSG, ALT.ACKACT, ALT.ACKUSRID ACKUSRID, LG.* FROM   T_ALMEVT202101 ALT 
+      LEFT OUTER JOIN  T_LG202101 LG ON ALT.EVTLGUID  = LG.EVTLGUID  )  LG                              
+                    LEFT OUTER JOIN T_DEV    DEV ON LG.DEVUID   = DEV.DEVID    
+                    LEFT OUTER JOIN T_EVTTYP EVT ON EVT.EVT     = LG.EVT       
+                    LEFT OUTER JOIN T_USR   USR ON LG.USRID     = USR.USRID    
+                    LEFT OUTER JOIN T_USR   ACKUSR ON LG.ACKUSRID = ACKUSR.USRID 
+                    LEFT OUTER JOIN T_USRGR UGR ON USR.USRGRUID = UGR.USRGRUID   
+                    LEFT OUTER JOIN T_DR	   DR  ON LG.DRUID     = DR.DRUID       
+                    LEFT OUTER JOIN T_DR	   DR1  ON LG.DRUID1     = DR1.DRUID       
+                    LEFT OUTER JOIN T_DR	   DR2  ON LG.DRUID2     = DR2.DRUID       
+                    LEFT OUTER JOIN T_DR	   DR3  ON LG.DRUID3     = DR3.DRUID       
+                    LEFT OUTER JOIN T_ZN    ZN  ON LG.ZNUID     = ZN.ZNUID )  AS LGT 
+ WHERE ACKACT = :1 
+Table 'biostar2_ac.t_almevt202101' doesn't exist
+21/01/14 00:00:24.524088 E <SYS> [0x00000c94] Cannot execute the command: 
+ SELECT       *  FROM 
+          ( SELECT  LG.EVTLGUID ,                                              
+                    LG.SRVDT    ,                                              
+                    LG.DEVDT    ,                                              
+                    LG.DEVUID   ,                                              
+                    LG.DEVLGIDX ,                                              
+                    LG.IMGLGUID ,                                              
+                    LG.USRID   USRID,                                              
+                    LG.EVT      ,                                              
+                    LG.CRDSL    ,                                              
+                    LG.TNAKEY   ,                                              
+                    LG.DRUID    ,                                              
+                    DR.NM AS DRNM,											  
+                    LG.DRUID1    ,                                              
+                    LG.DRUID2    ,                                              
+                    LG.DRUID3    ,                                              
+                    LG.ZNUID    ,                                              
+                    DEV.DEVID   ,                                              
+                    DEV.NM      DEVNM,                                         
+                    USR.USRID   USERID,                                              
+                    USR.NM      USRNM,                                         
+                    UGR.USRGRUID,                                              
+                    UGR.NM      UGRNM,                                         
+                    EVT.NM      EVTNM,                                         
+                    DR1.NM       DRNM1,                                          
+                    DR2.NM       DRNM2,                                          
+                    DR3.NM       DRNM3,                                          
+                    ZN.NM       ZNNM,                                          
+                    LG.ACKDT    ACKDT,                                         
+                    LG.ACKMSG   ACKMSG,                                        
+                    LG.ACKACT   ACKACT,                                        
+                    LG.ACKUSRID ACKUSRID,                                      
+                    LG.USRUDTBYDEV USRUDTBYDEV,                                      
+                    ACKUSR.NM   ACKUSRNM                                       
+               FROM ( 
+ SELECT ALT.ACKDT, ALT.ACKMSG, ALT.ACKACT, ALT.ACKUSRID ACKUSRID, LG.* FROM   T_ALMEVT202101 ALT 
+      LEFT OUTER JOIN  T_LG202101 LG ON ALT.EVTLGUID  = LG.EVTLGUID  )  LG                              
+                    LEFT OUTER JOIN T_DEV    DEV ON LG.DEVUID   = DEV.DEVID    
+                    LEFT OUTER JOIN T_EVTTYP EVT ON EVT.EVT     = LG.EVT       
+                    LEFT OUTER JOIN T_USR   USR ON LG.USRID     = USR.USRID    
+                    LEFT OUTER JOIN T_USR   ACKUSR ON LG.ACKUSRID = ACKUSR.USRID 
+                    LEFT OUTER JOIN T_USRGR UGR ON USR.USRGRUID = UGR.USRGRUID   
+                    LEFT OUTER JOIN T_DR	   DR  ON LG.DRUID     = DR.DRUID       
+                    LEFT OUTER JOIN T_DR	   DR1  ON LG.DRUID1     = DR1.DRUID       
+                    LEFT OUTER JOIN T_DR	   DR2  ON LG.DRUID2     = DR2.DRUID       
+                    LEFT OUTER JOIN T_DR	   DR3  ON LG.DRUID3     = DR3.DRUID       
+                    LEFT OUTER JOIN T_ZN    ZN  ON LG.ZNUID     = ZN.ZNUID )  AS LGT 
+ WHERE ACKACT = :1  ORDER BY LGT.EVTLGUID  LIMIT 1 OFFSET 0 
+Table 'biostar2_ac.t_almevt202101' doesn't exist
+21/01/14 00:00:39.463854 E <SYS> [0x00002664] Cannot execute the command: SELECT * FROM (
+            SELECT  LG.EVTLGUID ,                                              
+                    LG.SRVDT    ,                                              
+                    LG.DEVDT    ,                                              
+                    LG.DEVUID   ,                                              
+                    LG.DEVLGIDX ,                                              
+                    LG.IMGLGUID ,                                              
+                    LG.USRID   USRID,                                              
+                    LG.EVT      ,                                              
+                    LG.CRDSL    ,                                              
+                    LG.TNAKEY   ,                                              
+                    LG.DRUID    ,                                              
+                    DR.NM AS DRNM,											  
+                    LG.ZNUID    ,                                              
+                    LG.DEVUID   DEVID,                                         
+                    DEV.NM    DEVNM, 
+                    USR.NM  USRNM ,                                               
+                    LG.USRGRUID,                                               
+                    UGR.NM      UGRNM,                                         
+                    EVT.NM      EVTNM,					
+                    LG.DRUID1   DRUID1,                                              
+                    DR1.NM       DRNM1,                                          
+                    LG.DRUID2   DRUID2,                                              
+                    DR2.NM       DRNM2,                                          
+                    LG.DRUID3   DRUID3,                                              
+                    DR3.NM       DRNM3,                                          
+                    EV.NM       EVNM,                                          
+                    TAKEY.CAP   TNACAP,                                          
+                    ZN.NM       ZNNM,                                           
+CASE WHEN DEV.DEVGRUID IS NULL THEN(SELECT PRNT.DEVGRUID FROM T_DEV PRNT, T_DEV CHLD WHERE CHLD.PARENTDEVID = PRNT.DEVID AND CHLD.DEVID = LG.DEVUID) ELSE DEV.DEVGRUID END AS DEVGRUID, 
+DR.DRGRUID, 
+DR1.DRGRUID DRGRUID1, 
+DR2.DRGRUID DRGRUID2, 
+DR3.DRGRUID DRGRUID3, 
+ZN.TYP, 
+EV.ELVTGRUID, 
+EV.ELVTUID ELVTUID, 
+IS_DST, 
+TMZN_HALF, 
+TMZN_HOUR, 
+TMZN_NEGTV, 
+USRUDTBYDEV, 
+HINT, 
+TEMPER 
+  
+		               FROM ( 
+SELECT L.* FROM T_LG202101 L 
+ WHERE L.DEVDT BETWEEN 1610557200 AND 1610643599 
+ ORDER BY L.HINT DESC LIMIT 51 OFFSET 0  ) LG												
+                    LEFT OUTER JOIN T_DEV        DEV ON LG.DEVUID = DEV.DEVID  
+                    LEFT OUTER JOIN T_TAKEY      TAKEY ON (LG.DEVUID = TAKEY.DEVUID AND LG.TNAKEY = TAKEY.IDX + 1) 
+                    LEFT OUTER JOIN T_EVTTYP     EVT ON EVT.EVT   = LG.EVT     
+                    LEFT OUTER JOIN T_USR   USR ON LG.USRID     = USR.USRID    
+                    LEFT OUTER JOIN T_USRGR UGR ON LG.USRGRUID  = UGR.USRGRUID 
+                    LEFT OUTER JOIN T_DR	   DR  ON LG.DRUID     = DR.DRUID     
+                    LEFT OUTER JOIN T_DR	   DR1  ON LG.DRUID1     = DR1.DRUID     
+                    LEFT OUTER JOIN T_DR	   DR2  ON LG.DRUID2     = DR2.DRUID     
+                    LEFT OUTER JOIN T_DR	   DR3  ON LG.DRUID3     = DR3.DRUID     
+                    LEFT OUTER JOIN T_ELVT  EV  ON LG.DRUID     = EV.ELVTUID   
+                    LEFT OUTER JOIN T_ZN    ZN  ON LG.ZNUID     = ZN.ZNUID     ) LG 
+ ORDER BY  HINT DESC
+Table 'biostar2_ac.t_lg202101' doesn't exist
+21/01/14 00:00:41.916980 E <SYS> [0x000025d4] Cannot execute the command: 
+ SELECT COUNT(*) FROM 
+          ( SELECT  LG.EVTLGUID ,                                              
+                    LG.SRVDT    ,                                              
+                    LG.DEVDT    ,                                              
+                    LG.DEVUID   ,                                              
+                    LG.DEVLGIDX ,                                              
+                    LG.IMGLGUID ,                                              
+                    LG.USRID   USRID,                                              
+                    LG.EVT      ,                                              
+                    LG.CRDSL    ,                                              
+                    LG.TNAKEY   ,                                              
+                    LG.DRUID    ,                                              
+                    DR.NM AS DRNM,											  
+                    LG.DRUID1    ,                                              
+                    LG.DRUID2    ,                                              
+                    LG.DRUID3    ,                                              
+                    LG.ZNUID    ,                                              
+                    DEV.DEVID   ,                                              
+                    DEV.NM      DEVNM,                                         
+                    USR.USRID   USERID,                                              
+                    USR.NM      USRNM,                                         
+                    UGR.USRGRUID,                                              
+                    UGR.NM      UGRNM,                                         
+                    EVT.NM      EVTNM,                                         
+                    DR1.NM       DRNM1,                                          
+                    DR2.NM       DRNM2,                                          
+                    DR3.NM       DRNM3,                                          
+                    ZN.NM       ZNNM,                                          
+                    LG.ACKDT    ACKDT,                                         
+                    LG.ACKMSG   ACKMSG,                                        
+                    LG.ACKACT   ACKACT,                                        
+                    LG.ACKUSRID ACKUSRID,                                      
+                    LG.USRUDTBYDEV USRUDTBYDEV,                                      
+                    ACKUSR.NM   ACKUSRNM                                       
+               FROM ( 
+ SELECT ALT.ACKDT, ALT.ACKMSG, ALT.ACKACT, ALT.ACKUSRID ACKUSRID, LG.* FROM   T_ALMEVT202101 ALT 
+      LEFT OUTER JOIN  T_LG202101 LG ON ALT.EVTLGUID  = LG.EVTLGUID  )  LG                              
+                    LEFT OUTER JOIN T_DEV    DEV ON LG.DEVUID   = DEV.DEVID    
+                    LEFT OUTER JOIN T_EVTTYP EVT ON EVT.EVT     = LG.EVT       
+                    LEFT OUTER JOIN T_USR   USR ON LG.USRID     = USR.USRID    
+                    LEFT OUTER JOIN T_USR   ACKUSR ON LG.ACKUSRID = ACKUSR.USRID 
+                    LEFT OUTER JOIN T_USRGR UGR ON USR.USRGRUID = UGR.USRGRUID   
+                    LEFT OUTER JOIN T_DR	   DR  ON LG.DRUID     = DR.DRUID       
+                    LEFT OUTER JOIN T_DR	   DR1  ON LG.DRUID1     = DR1.DRUID       
+                    LEFT OUTER JOIN T_DR	   DR2  ON LG.DRUID2     = DR2.DRUID       
+                    LEFT OUTER JOIN T_DR	   DR3  ON LG.DRUID3     = DR3.DRUID       
+                    LEFT OUTER JOIN T_ZN    ZN  ON LG.ZNUID     = ZN.ZNUID )  AS LGT 
+ WHERE ACKACT = :1 
+Table 'biostar2_ac.t_almevt202101' doesn't exist
+21/01/14 00:00:41.916980 E <SYS> [0x000025d4] Cannot execute the command: 
+ SELECT       *  FROM 
+          ( SELECT  LG.EVTLGUID ,                                              
+                    LG.SRVDT    ,                                              
+                    LG.DEVDT    ,                                              
+                    LG.DEVUID   ,                                              
+                    LG.DEVLGIDX ,                                              
+                    LG.IMGLGUID ,                                              
+                    LG.USRID   USRID,                                              
+                    LG.EVT      ,                                              
+                    LG.CRDSL    ,                                              
+                    LG.TNAKEY   ,                                              
+                    LG.DRUID    ,                                              
+                    DR.NM AS DRNM,											  
+                    LG.DRUID1    ,                                              
+                    LG.DRUID2    ,                                              
+                    LG.DRUID3    ,                                              
+                    LG.ZNUID    ,                                              
+                    DEV.DEVID   ,                                              
+                    DEV.NM      DEVNM,                                         
+                    USR.USRID   USERID,                                              
+                    USR.NM      USRNM,                                         
+                    UGR.USRGRUID,                                              
+                    UGR.NM      UGRNM,                                         
+                    EVT.NM      EVTNM,                                         
+                    DR1.NM       DRNM1,                                          
+                    DR2.NM       DRNM2,                                          
+                    DR3.NM       DRNM3,                                          
+                    ZN.NM       ZNNM,                                          
+                    LG.ACKDT    ACKDT,                                         
+                    LG.ACKMSG   ACKMSG,                                        
+                    LG.ACKACT   ACKACT,                                        
+                    LG.ACKUSRID ACKUSRID,                                      
+                    LG.USRUDTBYDEV USRUDTBYDEV,                                      
+                    ACKUSR.NM   ACKUSRNM                                       
+               FROM ( 
+ SELECT ALT.ACKDT, ALT.ACKMSG, ALT.ACKACT, ALT.ACKUSRID ACKUSRID, LG.* FROM   T_ALMEVT202101 ALT 
+      LEFT OUTER JOIN  T_LG202101 LG ON ALT.EVTLGUID  = LG.EVTLGUID  )  LG                              
+                    LEFT OUTER JOIN T_DEV    DEV ON LG.DEVUID   = DEV.DEVID    
+                    LEFT OUTER JOIN T_EVTTYP EVT ON EVT.EVT     = LG.EVT       
+                    LEFT OUTER JOIN T_USR   USR ON LG.USRID     = USR.USRID    
+                    LEFT OUTER JOIN T_USR   ACKUSR ON LG.ACKUSRID = ACKUSR.USRID 
+                    LEFT OUTER JOIN T_USRGR UGR ON USR.USRGRUID = UGR.USRGRUID   
+                    LEFT OUTER JOIN T_DR	   DR  ON LG.DRUID     = DR.DRUID       
+                    LEFT OUTER JOIN T_DR	   DR1  ON LG.DRUID1     = DR1.DRUID       
+                    LEFT OUTER JOIN T_DR	   DR2  ON LG.DRUID2     = DR2.DRUID       
+                    LEFT OUTER JOIN T_DR	   DR3  ON LG.DRUID3     = DR3.DRUID       
+                    LEFT OUTER JOIN T_ZN    ZN  ON LG.ZNUID     = ZN.ZNUID )  AS LGT 
+ WHERE ACKACT = :1  ORDER BY LGT.EVTLGUID  LIMIT 1 OFFSET 0 
+Table 'biostar2_ac.t_almevt202101' doesn't exist
+21/01/14 00:01:40.557651 E <SYS> [0x000029b4] Server is stopped..( launcher request stop )
+21/01/14 00:01:45.949495 E <SYS> [0x00001478] Error LicenseManager::checkOutLicense
+21/01/14 00:01:45.949495 E <SYS> [0x00001478] -1
+21/01/14 00:01:45.949495 E <SYS> [0x00001478]  requesting activation
+21/01/14 00:01:45.949495 E <SYS> [0x00001478] No error
+21/01/14 00:01:45.949495 E <SYS> [0x00001478] Error LicenseManager::checkOutLicense
+21/01/14 00:01:45.949495 E <SYS> [0x00001478] -1
+21/01/14 00:01:45.949495 E <SYS> [0x00001478]  requesting activation
+21/01/14 00:01:45.949495 E <SYS> [0x00001478] No error
+21/01/14 00:01:45.949495 E <SYS> [0x00001478] Error LicenseManager::checkOutLicense
+21/01/14 00:01:45.949495 E <SYS> [0x00001478] -1
+21/01/14 00:01:45.949495 E <SYS> [0x00001478]  requesting activation
+21/01/14 00:01:45.949495 E <SYS> [0x00001478] No error
+21/01/14 00:01:45.949495 E <SYS> [0x00001478] Error LicenseManager::checkOutLicense
+21/01/14 00:01:45.949495 E <SYS> [0x00001478] -1
+21/01/14 00:01:45.949495 E <SYS> [0x00001478]  requesting activation
+21/01/14 00:01:45.949495 E <SYS> [0x00001478] No error
+21/01/14 00:01:45.949495 E <SYS> [0x00001478] Error LicenseManager::checkOutLicense
+21/01/14 00:01:45.949495 E <SYS> [0x00001478] -1
+21/01/14 00:01:45.949495 E <SYS> [0x00001478]  requesting activation
+21/01/14 00:01:45.949495 E <SYS> [0x00001478] No error
+21/01/14 00:01:45.949495 E <SYS> [0x00001478] Error LicenseManager::checkOutLicense
+21/01/14 00:01:45.949495 E <SYS> [0x00001478] -1
+21/01/14 00:01:45.949495 E <SYS> [0x00001478]  requesting activation
+21/01/14 00:01:45.949495 E <SYS> [0x00001478] No error
+21/01/14 00:01:45.949495 E <SYS> [0x00001478] Error LicenseManager::checkOutLicense
+21/01/14 00:01:45.949495 E <SYS> [0x00001478] -1
+21/01/14 00:01:45.949495 E <SYS> [0x00001478]  requesting activation
+21/01/14 00:01:45.949495 E <SYS> [0x00001478] No error
+21/01/14 00:01:45.949495 E <SYS> [0x00001478] Error LicenseManager::checkOutLicense
+21/01/14 00:01:45.949495 E <SYS> [0x00001478] -1
+21/01/14 00:01:45.949495 E <SYS> [0x00001478]  requesting activation
+21/01/14 00:01:45.949495 E <SYS> [0x00001478] No error
+21/01/14 00:01:45.949495 E <SYS> [0x00001478] Error LicenseManager::checkOutLicense
+21/01/14 00:01:45.949495 E <SYS> [0x00001478] -1
+21/01/14 00:01:45.949495 E <SYS> [0x00001478]  requesting activation
+21/01/14 00:01:45.949495 E <SYS> [0x00001478] No error
+21/01/14 00:01:45.949495 E <SYS> [0x00001478] Error LicenseManager::checkOutLicense
+21/01/14 00:01:45.949495 E <SYS> [0x00001478] -1
+21/01/14 00:01:45.949495 E <SYS> [0x00001478]  requesting activation
+21/01/14 00:01:45.949495 E <SYS> [0x00001478] No error
+21/01/14 00:01:45.949495 E <SYS> [0x00001478] Error LicenseManager::checkOutLicense
+21/01/14 00:01:45.949495 E <SYS> [0x00001478] -1
+21/01/14 00:01:45.949495 E <SYS> [0x00001478]  requesting activation
+21/01/14 00:01:45.949495 E <SYS> [0x00001478] No error
+21/01/14 00:01:50.887004 E <SYS> [0x000017fc] handle error packet: [packet] code=256,codeStr=BS2_PROTO_UNSUPPORTED,device=540132202,cmd=0x107,cmdstr=BS2_CMD_GET_CONFIG_EX,seq=2,version=3,payload=0,param1=0,param2=0,flag=3,option=256,index=0,total=0
+21/01/14 00:01:50.902626 E <SYS> [0x00002924] handle error packet: [packet] code=256,codeStr=BS2_PROTO_UNSUPPORTED,device=540132442,cmd=0x107,cmdstr=BS2_CMD_GET_CONFIG_EX,seq=2,version=3,payload=0,param1=0,param2=0,flag=3,option=256,index=0,total=0
+21/01/14 00:01:50.933880 E <SYS> [0x000002f8] handle error packet: [packet] code=256,codeStr=BS2_PROTO_UNSUPPORTED,device=540133103,cmd=0x107,cmdstr=BS2_CMD_GET_CONFIG_EX,seq=2,version=3,payload=0,param1=0,param2=0,flag=3,option=256,index=0,total=0
+21/01/14 00:01:50.980750 E <SYS> [0x000002f8] handle error packet: [packet] code=256,codeStr=BS2_PROTO_UNSUPPORTED,device=540132450,cmd=0x107,cmdstr=BS2_CMD_GET_CONFIG_EX,seq=2,version=3,payload=0,param1=0,param2=0,flag=3,option=256,index=0,total=0
+21/01/14 00:01:50.996374 E <SYS> [0x00002924] handle error packet: [packet] code=256,codeStr=BS2_PROTO_UNSUPPORTED,device=540132441,cmd=0x107,cmdstr=BS2_CMD_GET_CONFIG_EX,seq=2,version=3,payload=0,param1=0,param2=0,flag=3,option=256,index=0,total=0
+21/01/14 00:01:50.996374 E <SYS> [0x00001178] Cannot execute the command: 
+ UPDATE T_DEV 
+    SET STA = :1 
+  WHERE DEVID IN (540132202)
+Error code=1213
+Deadlock found when trying to get lock; try restarting transaction
+21/01/14 00:01:51.012000 E <SYS> [0x000020a8] Cannot execute the command: 
+ UPDATE T_DEV 
+    SET STA = :1 
+  WHERE DEVID IN (540132442)
+Error code=1213
+Deadlock found when trying to get lock; try restarting transaction
+21/01/14 00:01:51.027627 E <SYS> [0x00000530] Cannot execute the command: 
+ UPDATE T_DEV 
+    SET STA = :1 
+  WHERE DEVID IN (540133103)
+Error code=1213
+Deadlock found when trying to get lock; try restarting transaction
+21/01/14 00:01:51.043255 E <SYS> [0x00002924] handle error packet: [packet] code=256,codeStr=BS2_PROTO_UNSUPPORTED,device=540127960,cmd=0x107,cmdstr=BS2_CMD_GET_CONFIG_EX,seq=2,version=3,payload=0,param1=0,param2=0,flag=3,option=256,index=0,total=0
+21/01/14 00:01:51.090152 E <SYS> [0x000020a8] Cannot execute the command: 
+ UPDATE T_DEV 
+    SET STA = :1 
+  WHERE DEVID IN (540132450)
+Error code=1213
+Deadlock found when trying to get lock; try restarting transaction
+21/01/14 00:01:51.183875 E <SYS> [0x000002f8] handle error packet: [packet] code=256,codeStr=BS2_PROTO_UNSUPPORTED,device=540132200,cmd=0x107,cmdstr=BS2_CMD_GET_CONFIG_EX,seq=2,version=3,payload=0,param1=0,param2=0,flag=3,option=256,index=0,total=0
+21/01/14 00:01:51.262004 E <SYS> [0x000002f8] handle error packet: [packet] code=256,codeStr=BS2_PROTO_UNSUPPORTED,device=540127958,cmd=0x107,cmdstr=BS2_CMD_GET_CONFIG_EX,seq=2,version=3,payload=0,param1=0,param2=0,flag=3,option=256,index=0,total=0
+21/01/14 00:01:51.402632 E <SYS> [0x00000c4c] Cannot execute the command: 
+ UPDATE T_DEV 
+    SET STA = :1 
+  WHERE DEVID IN (540127958)
+Error code=1213
+Deadlock found when trying to get lock; try restarting transaction
+21/01/14 15:25:46.104900 E <SYS> [0x00000458] Error LicenseManager::checkOutLicense
+21/01/14 15:25:46.104900 E <SYS> [0x00000458] -1
+21/01/14 15:25:46.104900 E <SYS> [0x00000458]  requesting activation
+21/01/14 15:25:46.104900 E <SYS> [0x00000458] No error
+21/01/14 15:25:46.104900 E <SYS> [0x00000458] Error LicenseManager::checkOutLicense
+21/01/14 15:25:46.104900 E <SYS> [0x00000458] -1
+21/01/14 15:25:46.104900 E <SYS> [0x00000458]  requesting activation
+21/01/14 15:25:46.104900 E <SYS> [0x00000458] No error
+21/01/14 15:25:46.104900 E <SYS> [0x00000458] Error LicenseManager::checkOutLicense
+21/01/14 15:25:46.104900 E <SYS> [0x00000458] -1
+21/01/14 15:25:46.104900 E <SYS> [0x00000458]  requesting activation
+21/01/14 15:25:46.104900 E <SYS> [0x00000458] No error
+21/01/14 15:25:46.104900 E <SYS> [0x00000458] Error LicenseManager::checkOutLicense
+21/01/14 15:25:46.104900 E <SYS> [0x00000458] -1
+21/01/14 15:25:46.104900 E <SYS> [0x00000458]  requesting activation
+21/01/14 15:25:46.104900 E <SYS> [0x00000458] No error
+21/01/14 15:25:46.104900 E <SYS> [0x00000458] Error LicenseManager::checkOutLicense
+21/01/14 15:25:46.104900 E <SYS> [0x00000458] -1
+21/01/14 15:25:46.104900 E <SYS> [0x00000458]  requesting activation
+21/01/14 15:25:46.104900 E <SYS> [0x00000458] No error
+21/01/14 15:25:46.104900 E <SYS> [0x00000458] Error LicenseManager::checkOutLicense
+21/01/14 15:25:46.104900 E <SYS> [0x00000458] -1
+21/01/14 15:25:46.104900 E <SYS> [0x00000458]  requesting activation
+21/01/14 15:25:46.104900 E <SYS> [0x00000458] No error
+21/01/14 15:25:46.104900 E <SYS> [0x00000458] Error LicenseManager::checkOutLicense
+21/01/14 15:25:46.104900 E <SYS> [0x00000458] -1
+21/01/14 15:25:46.104900 E <SYS> [0x00000458]  requesting activation
+21/01/14 15:25:46.104900 E <SYS> [0x00000458] No error
+21/01/14 15:25:46.104900 E <SYS> [0x00000458] Error LicenseManager::checkOutLicense
+21/01/14 15:25:46.104900 E <SYS> [0x00000458] -1
+21/01/14 15:25:46.104900 E <SYS> [0x00000458]  requesting activation
+21/01/14 15:25:46.104900 E <SYS> [0x00000458] No error
+21/01/14 15:25:46.104900 E <SYS> [0x00000458] Error LicenseManager::checkOutLicense
+21/01/14 15:25:46.104900 E <SYS> [0x00000458] -1
+21/01/14 15:25:46.104900 E <SYS> [0x00000458]  requesting activation
+21/01/14 15:25:46.104900 E <SYS> [0x00000458] No error
+21/01/14 15:25:46.104900 E <SYS> [0x00000458] Error LicenseManager::checkOutLicense
+21/01/14 15:25:46.104900 E <SYS> [0x00000458] -1
+21/01/14 15:25:46.104900 E <SYS> [0x00000458]  requesting activation
+21/01/14 15:25:46.104900 E <SYS> [0x00000458] No error
+21/01/14 15:25:46.104900 E <SYS> [0x00000458] Error LicenseManager::checkOutLicense
+21/01/14 15:25:46.104900 E <SYS> [0x00000458] -1
+21/01/14 15:25:46.104900 E <SYS> [0x00000458]  requesting activation
+21/01/14 15:25:46.104900 E <SYS> [0x00000458] No error
+21/01/14 16:17:33.977010 E <SYS> [0x00000c04] Server is stopped..( launcher request stop )
+21/01/14 16:17:34.883276 E <SYS> [0x00001264] Error LicenseManager::checkOutLicense
+21/01/14 16:17:34.883276 E <SYS> [0x00001264] -1
+21/01/14 16:17:34.883276 E <SYS> [0x00001264]  requesting activation
+21/01/14 16:17:34.883276 E <SYS> [0x00001264] No error
+21/01/14 16:17:34.883276 E <SYS> [0x00001264] Error LicenseManager::checkOutLicense
+21/01/14 16:17:34.883276 E <SYS> [0x00001264] -1
+21/01/14 16:17:34.883276 E <SYS> [0x00001264]  requesting activation
+21/01/14 16:17:34.883276 E <SYS> [0x00001264] No error
+21/01/14 16:17:34.883276 E <SYS> [0x00001264] Error LicenseManager::checkOutLicense
+21/01/14 16:17:34.883276 E <SYS> [0x00001264] -1
+21/01/14 16:17:34.883276 E <SYS> [0x00001264]  requesting activation
+21/01/14 16:17:34.883276 E <SYS> [0x00001264] No error
+21/01/14 16:17:34.883276 E <SYS> [0x00001264] Error LicenseManager::checkOutLicense
+21/01/14 16:17:34.883276 E <SYS> [0x00001264] -1
+21/01/14 16:17:34.883276 E <SYS> [0x00001264]  requesting activation
+21/01/14 16:17:34.883276 E <SYS> [0x00001264] No error
+21/01/14 16:17:34.883276 E <SYS> [0x00001264] Error LicenseManager::checkOutLicense
+21/01/14 16:17:34.883276 E <SYS> [0x00001264] -1
+21/01/14 16:17:34.883276 E <SYS> [0x00001264]  requesting activation
+21/01/14 16:17:34.883276 E <SYS> [0x00001264] No error
+21/01/14 16:17:34.883276 E <SYS> [0x00001264] Error LicenseManager::checkOutLicense
+21/01/14 16:17:34.883276 E <SYS> [0x00001264] -1
+21/01/14 16:17:34.883276 E <SYS> [0x00001264]  requesting activation
+21/01/14 16:17:34.883276 E <SYS> [0x00001264] No error
+21/01/14 16:17:34.883276 E <SYS> [0x00001264] Error LicenseManager::checkOutLicense
+21/01/14 16:17:34.883276 E <SYS> [0x00001264] -1
+21/01/14 16:17:34.883276 E <SYS> [0x00001264]  requesting activation
+21/01/14 16:17:34.883276 E <SYS> [0x00001264] No error
+21/01/14 16:17:34.883276 E <SYS> [0x00001264] Error LicenseManager::checkOutLicense
+21/01/14 16:17:34.883276 E <SYS> [0x00001264] -1
+21/01/14 16:17:34.883276 E <SYS> [0x00001264]  requesting activation
+21/01/14 16:17:34.883276 E <SYS> [0x00001264] No error
+21/01/14 16:17:34.883276 E <SYS> [0x00001264] Error LicenseManager::checkOutLicense
+21/01/14 16:17:34.883276 E <SYS> [0x00001264] -1
+21/01/14 16:17:34.883276 E <SYS> [0x00001264]  requesting activation
+21/01/14 16:17:34.883276 E <SYS> [0x00001264] No error
+21/01/14 16:17:34.883276 E <SYS> [0x00001264] Error LicenseManager::checkOutLicense
+21/01/14 16:17:34.883276 E <SYS> [0x00001264] -1
+21/01/14 16:17:34.883276 E <SYS> [0x00001264]  requesting activation
+21/01/14 16:17:34.883276 E <SYS> [0x00001264] No error
+21/01/14 16:17:34.883276 E <SYS> [0x00001264] Error LicenseManager::checkOutLicense
+21/01/14 16:17:34.883276 E <SYS> [0x00001264] -1
+21/01/14 16:17:34.883276 E <SYS> [0x00001264]  requesting activation
+21/01/14 16:17:34.883276 E <SYS> [0x00001264] No error
+21/01/14 16:17:34.977020 E <SYS> [0x00001264] Cannot execute the command: 
+CREATE INDEX DEVDT_UID_DT_T_LG202101_IX ON T_LG202101 (DEVDT) 
+Error code=1061
+Duplicate key name 'DEVDT_UID_DT_T_LG202101_IX'
+21/01/14 16:17:34.977020 E <SYS> [0x00001264] Failed but reason isn't retriable. Exit retry loop...
+21/01/14 16:17:40.149362 E <SYS> [0x00002734] handle error packet: [packet] code=256,codeStr=BS2_PROTO_UNSUPPORTED,device=540127958,cmd=0x107,cmdstr=BS2_CMD_GET_CONFIG_EX,seq=2,version=3,payload=0,param1=0,param2=0,flag=3,option=256,index=0,total=0
+21/01/14 16:17:40.149362 E <SYS> [0x00000d64] handle error packet: [packet] code=256,codeStr=BS2_PROTO_UNSUPPORTED,device=540132200,cmd=0x107,cmdstr=BS2_CMD_GET_CONFIG_EX,seq=2,version=3,payload=0,param1=0,param2=0,flag=3,option=256,index=0,total=0
+21/01/14 16:17:44.211847 E <SYS> [0x00002750] handle error packet: [packet] code=256,codeStr=BS2_PROTO_UNSUPPORTED,device=540132442,cmd=0x107,cmdstr=BS2_CMD_GET_CONFIG_EX,seq=2,version=3,payload=0,param1=0,param2=0,flag=3,option=256,index=0,total=0
+21/01/14 16:17:44.227473 E <SYS> [0x00002750] handle error packet: [packet] code=256,codeStr=BS2_PROTO_UNSUPPORTED,device=540132450,cmd=0x107,cmdstr=BS2_CMD_GET_CONFIG_EX,seq=2,version=3,payload=0,param1=0,param2=0,flag=3,option=256,index=0,total=0
+21/01/14 16:17:44.258724 E <SYS> [0x00002734] handle error packet: [packet] code=256,codeStr=BS2_PROTO_UNSUPPORTED,device=540133103,cmd=0x107,cmdstr=BS2_CMD_GET_CONFIG_EX,seq=2,version=3,payload=0,param1=0,param2=0,flag=3,option=256,index=0,total=0
+21/01/14 16:17:44.274347 E <SYS> [0x00000fc4] Cannot execute the command: 
+ DELETE 
+   FROM T_BZOUP 
+  WHERE DEVUID = :1 
+Error code=1213
+Deadlock found when trying to get lock; try restarting transaction
+21/01/14 16:17:44.289978 E <SYS> [0x000013cc] Cannot execute the command: 
+ UPDATE T_DEV 
+    SET STA = :1 
+  WHERE DEVID IN (540132442)
+Error code=1213
+Deadlock found when trying to get lock; try restarting transaction
+21/01/14 16:17:44.305600 E <SYS> [0x00002750] handle error packet: [packet] code=256,codeStr=BS2_PROTO_UNSUPPORTED,device=540132202,cmd=0x107,cmdstr=BS2_CMD_GET_CONFIG_EX,seq=2,version=3,payload=0,param1=0,param2=0,flag=3,option=256,index=0,total=0
+21/01/14 16:17:44.336870 E <SYS> [0x00002750] handle error packet: [packet] code=256,codeStr=BS2_PROTO_UNSUPPORTED,device=540132441,cmd=0x107,cmdstr=BS2_CMD_GET_CONFIG_EX,seq=2,version=3,payload=0,param1=0,param2=0,flag=3,option=256,index=0,total=0
+21/01/14 16:17:44.368102 E <SYS> [0x000007a4] Cannot execute the command: 
+ UPDATE T_DEV 
+    SET STA = :1 
+  WHERE DEVID IN (540132450)
+Error code=1213
+Deadlock found when trying to get lock; try restarting transaction
+21/01/14 16:17:44.383724 E <SYS> [0x00002750] handle error packet: [packet] code=256,codeStr=BS2_PROTO_UNSUPPORTED,device=540127960,cmd=0x107,cmdstr=BS2_CMD_GET_CONFIG_EX,seq=2,version=3,payload=0,param1=0,param2=0,flag=3,option=256,index=0,total=0
+21/01/14 16:17:44.430598 E <SYS> [0x000013cc] Cannot execute the command: 
+ DELETE 
+   FROM T_BZOUP 
+  WHERE DEVUID = :1 
+Error code=1213
+Deadlock found when trying to get lock; try restarting transaction
+21/01/14 16:17:44.446224 E <SYS> [0x00000a84] Cannot execute the command: 
+ UPDATE T_DEV 
+    SET STA = :1 
+  WHERE DEVID IN (540132202)
+Error code=1213
+Deadlock found when trying to get lock; try restarting transaction
+21/01/14 20:53:10.613763 E <SYS> [0x000010a8] handle error packet: [packet] code=256,codeStr=BS2_PROTO_UNSUPPORTED,device=540132441,cmd=0x122,cmdstr=BS2_CMD_GET_CAPABILITIES,seq=512,version=3,payload=0,param1=0,param2=0,flag=3,option=256,index=0,total=0
+21/01/14 20:53:10.613763 E <SYS> [0x000010a8] handle error packet: [packet] code=256,codeStr=BS2_PROTO_UNSUPPORTED,device=540132441,cmd=0x107,cmdstr=BS2_CMD_GET_CONFIG_EX,seq=513,version=3,payload=0,param1=0,param2=0,flag=3,option=256,index=0,total=0
+21/01/14 23:59:00.582888 E <SYS> [0x00001ec0] Server is stopped..( launcher request stop )
+21/01/14 23:59:02.662350 E <SYS> [0x0000031c] Error LicenseManager::checkOutLicense
+21/01/14 23:59:02.662350 E <SYS> [0x0000031c] -1
+21/01/14 23:59:02.662350 E <SYS> [0x0000031c]  requesting activation
+21/01/14 23:59:02.662350 E <SYS> [0x0000031c] No error
+21/01/14 23:59:02.662350 E <SYS> [0x0000031c] Error LicenseManager::checkOutLicense
+21/01/14 23:59:02.662350 E <SYS> [0x0000031c] -1
+21/01/14 23:59:02.662350 E <SYS> [0x0000031c]  requesting activation
+21/01/14 23:59:02.662350 E <SYS> [0x0000031c] No error
+21/01/14 23:59:02.662350 E <SYS> [0x0000031c] Error LicenseManager::checkOutLicense
+21/01/14 23:59:02.662350 E <SYS> [0x0000031c] -1
+21/01/14 23:59:02.662350 E <SYS> [0x0000031c]  requesting activation
+21/01/14 23:59:02.662350 E <SYS> [0x0000031c] No error
+21/01/14 23:59:02.662350 E <SYS> [0x0000031c] Error LicenseManager::checkOutLicense
+21/01/14 23:59:02.662350 E <SYS> [0x0000031c] -1
+21/01/14 23:59:02.662350 E <SYS> [0x0000031c]  requesting activation
+21/01/14 23:59:02.662350 E <SYS> [0x0000031c] No error
+21/01/14 23:59:02.662350 E <SYS> [0x0000031c] Error LicenseManager::checkOutLicense
+21/01/14 23:59:02.662350 E <SYS> [0x0000031c] -1
+21/01/14 23:59:02.662350 E <SYS> [0x0000031c]  requesting activation
+21/01/14 23:59:02.662350 E <SYS> [0x0000031c] No error
+21/01/14 23:59:02.677976 E <SYS> [0x0000031c] Error LicenseManager::checkOutLicense
+21/01/14 23:59:02.677976 E <SYS> [0x0000031c] -1
+21/01/14 23:59:02.677976 E <SYS> [0x0000031c]  requesting activation
+21/01/14 23:59:02.677976 E <SYS> [0x0000031c] No error
+21/01/14 23:59:02.677976 E <SYS> [0x0000031c] Error LicenseManager::checkOutLicense
+21/01/14 23:59:02.677976 E <SYS> [0x0000031c] -1
+21/01/14 23:59:02.677976 E <SYS> [0x0000031c]  requesting activation
+21/01/14 23:59:02.677976 E <SYS> [0x0000031c] No error
+21/01/14 23:59:02.677976 E <SYS> [0x0000031c] Error LicenseManager::checkOutLicense
+21/01/14 23:59:02.677976 E <SYS> [0x0000031c] -1
+21/01/14 23:59:02.677976 E <SYS> [0x0000031c]  requesting activation
+21/01/14 23:59:02.677976 E <SYS> [0x0000031c] No error
+21/01/14 23:59:02.677976 E <SYS> [0x0000031c] Error LicenseManager::checkOutLicense
+21/01/14 23:59:02.677976 E <SYS> [0x0000031c] -1
+21/01/14 23:59:02.677976 E <SYS> [0x0000031c]  requesting activation
+21/01/14 23:59:02.677976 E <SYS> [0x0000031c] No error
+21/01/14 23:59:02.677976 E <SYS> [0x0000031c] Error LicenseManager::checkOutLicense
+21/01/14 23:59:02.677976 E <SYS> [0x0000031c] -1
+21/01/14 23:59:02.677976 E <SYS> [0x0000031c]  requesting activation
+21/01/14 23:59:02.677976 E <SYS> [0x0000031c] No error
+21/01/14 23:59:02.677976 E <SYS> [0x0000031c] Error LicenseManager::checkOutLicense
+21/01/14 23:59:02.677976 E <SYS> [0x0000031c] -1
+21/01/14 23:59:02.677976 E <SYS> [0x0000031c]  requesting activation
+21/01/14 23:59:02.677976 E <SYS> [0x0000031c] No error
+21/01/14 23:59:02.756134 E <SYS> [0x0000031c] Cannot execute the command: 
+CREATE INDEX DEVDT_UID_DT_T_LG202101_IX ON T_LG202101 (DEVDT) 
+Error code=1061
+Duplicate key name 'DEVDT_UID_DT_T_LG202101_IX'
+21/01/14 23:59:02.756134 E <SYS> [0x0000031c] Failed but reason isn't retriable. Exit retry loop...
+21/01/14 23:59:07.943624 E <SYS> [0x00002bd4] handle error packet: [packet] code=256,codeStr=BS2_PROTO_UNSUPPORTED,device=540127958,cmd=0x107,cmdstr=BS2_CMD_GET_CONFIG_EX,seq=2,version=3,payload=0,param1=0,param2=0,flag=3,option=256,index=0,total=0
+21/01/14 23:59:07.959238 E <SYS> [0x00000c54] handle error packet: [packet] code=256,codeStr=BS2_PROTO_UNSUPPORTED,device=540132200,cmd=0x107,cmdstr=BS2_CMD_GET_CONFIG_EX,seq=2,version=3,payload=0,param1=0,param2=0,flag=3,option=256,index=0,total=0
+21/01/14 23:59:11.568624 E <SYS> [0x00002bd4] handle error packet: [packet] code=256,codeStr=BS2_PROTO_UNSUPPORTED,device=540132442,cmd=0x107,cmdstr=BS2_CMD_GET_CONFIG_EX,seq=2,version=3,payload=0,param1=0,param2=0,flag=3,option=256,index=0,total=0
+21/01/14 23:59:11.677995 E <SYS> [0x00000c54] handle error packet: [packet] code=256,codeStr=BS2_PROTO_UNSUPPORTED,device=540133103,cmd=0x107,cmdstr=BS2_CMD_GET_CONFIG_EX,seq=2,version=3,payload=0,param1=0,param2=0,flag=3,option=256,index=0,total=0
+21/01/14 23:59:11.771745 E <SYS> [0x00000628] handle error packet: [packet] code=256,codeStr=BS2_PROTO_UNSUPPORTED,device=540132202,cmd=0x107,cmdstr=BS2_CMD_GET_CONFIG_EX,seq=2,version=3,payload=0,param1=0,param2=0,flag=3,option=256,index=0,total=0
+21/01/14 23:59:11.787368 E <SYS> [0x00000628] handle error packet: [packet] code=256,codeStr=BS2_PROTO_UNSUPPORTED,device=540127960,cmd=0x107,cmdstr=BS2_CMD_GET_CONFIG_EX,seq=2,version=3,payload=0,param1=0,param2=0,flag=3,option=256,index=0,total=0
+21/01/14 23:59:11.834242 E <SYS> [0x00001bac] handle error packet: [packet] code=256,codeStr=BS2_PROTO_UNSUPPORTED,device=540132450,cmd=0x107,cmdstr=BS2_CMD_GET_CONFIG_EX,seq=2,version=3,payload=0,param1=0,param2=0,flag=3,option=256,index=0,total=0
+21/01/14 23:59:11.865498 E <SYS> [0x00000628] handle error packet: [packet] code=256,codeStr=BS2_PROTO_UNSUPPORTED,device=540132441,cmd=0x107,cmdstr=BS2_CMD_GET_CONFIG_EX,seq=2,version=3,payload=0,param1=0,param2=0,flag=3,option=256,index=0,total=0

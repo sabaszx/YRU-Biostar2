@@ -1,0 +1,67 @@
+20/10/22 16:56:27.679707: <trace> init config: ./launcher.conf: cannot open file
+20/10/22 16:56:27.686707: <info> ================= launcher start ====================
+20/10/22 16:56:28.193738: <info> launcher service name:BioStar 2 Launcher(x64)
+20/10/22 16:56:28.199736: <info> Launcher Service KillService
+20/10/22 16:56:28.205738: <error> OpenService failed, error: error code:0 - The operation completed successfully.
+
+20/10/22 16:56:28.270741: <trace> biostar version : 2.8.6.38
+20/10/22 16:56:28.277742: <trace> ac version : 2.8.6.92
+20/10/22 16:56:28.294741: <trace> ta version : 2.8.6.63
+20/10/22 16:56:28.308743: <info> ================= launcher start ====================
+20/10/22 16:56:28.837774: <info> launcher service name:BioStar 2 Launcher(x64)
+20/10/22 16:56:28.889776: <info> Launcher Service Install
+20/10/22 16:56:28.996782: <info> Make service dependency : BioStar 2 MariaDB(x64)
+20/10/22 16:56:29.031785: <info> Service installed success
+20/10/22 16:56:29.140792: <trace> biostar version : 2.8.6.38
+20/10/22 16:56:29.146792: <trace> ac version : 2.8.6.92
+20/10/22 16:56:29.150789: <trace> ta version : 2.8.6.63
+20/10/22 16:56:29.153792: <info> ================= launcher start ====================
+20/10/22 16:56:29.663821: <info> launcher service name:BioStar 2 Launcher(x64)
+20/10/22 16:56:29.684823: <info> Launcher Service RunService
+20/10/22 16:56:29.700823: <trace> biostar version : 2.8.6.38
+20/10/22 16:56:29.702824: <trace> ac version : 2.8.6.92
+20/10/22 16:56:29.702824: <trace> ta version : 2.8.6.63
+20/10/22 16:56:29.702824: <info> ================= launcher start ====================
+20/10/22 16:56:30.213854: <info> launcher service name:BioStar 2 Launcher(x64)
+20/10/22 16:56:30.227854: <info> BS2ServiceMain Func Start Log
+20/10/22 16:56:30.227854: <info> RegisterServiceCtrlHandler success
+20/10/22 16:56:30.270857: <info> Launcher Service Start!
+20/10/22 16:56:30.270857: <info> FixedErrorFiles. std exception - code:./repair.dat: cannot open file
+20/10/22 16:56:30.272855: <info> BS2StartBiostarServer Start Log
+20/10/22 16:56:30.227854: <info> StartService success
+20/10/22 17:03:20.431210: <info> biostar_restart_wait_time_in_seconds_ is set to 5
+20/10/22 17:03:20.446841: <trace> biostar version : 2.8.6.38
+20/10/22 17:03:20.446841: <trace> ac version : 2.8.6.92
+20/10/22 17:03:20.462462: <trace> ta version : 2.8.6.63
+20/10/22 17:03:20.462462: <info> ================= launcher start ====================
+20/10/22 17:03:20.978093: <info> launcher service name:BioStar 2 Launcher(x64)
+20/10/22 17:03:48.265766: <info> biostar_restart_wait_time_in_seconds_ is set to 5
+20/10/22 17:03:48.281397: <trace> biostar version : 2.8.6.38
+20/10/22 17:03:48.281397: <trace> ac version : 2.8.6.92
+20/10/22 17:03:48.297016: <trace> ta version : 2.8.6.63
+20/10/22 17:03:48.297016: <info> ================= launcher start ====================
+20/10/22 17:03:48.828409: <info> launcher service name:BioStar 2 Launcher(x64)
+20/10/22 17:04:43.897009: <info> biostar_restart_wait_time_in_seconds_ is set to 5
+20/10/22 17:04:43.912634: <trace> biostar version : 2.8.6.38
+20/10/22 17:04:43.912634: <trace> ac version : 2.8.6.92
+20/10/22 17:04:43.928259: <trace> ta version : 2.8.6.63
+20/10/22 17:04:43.928259: <info> ================= launcher start ====================
+20/10/22 17:04:44.443895: <info> launcher service name:BioStar 2 Launcher(x64)
+20/10/22 17:04:46.522014: <info> biostar_restart_wait_time_in_seconds_ is set to 5
+20/10/22 17:04:46.522014: <trace> biostar version : 2.8.6.38
+20/10/22 17:04:46.537640: <trace> ac version : 2.8.6.92
+20/10/22 17:04:46.537640: <trace> ta version : 2.8.6.63
+20/10/22 17:04:46.553262: <info> ================= launcher start ====================
+20/10/22 17:04:47.068903: <info> launcher service name:BioStar 2 Launcher(x64)
+20/10/22 17:04:59.773715: <info> biostar_restart_wait_time_in_seconds_ is set to 5
+20/10/22 17:04:59.789184: <trace> biostar version : 2.8.6.38
+20/10/22 17:04:59.804785: <trace> ac version : 2.8.6.92
+20/10/22 17:04:59.804785: <trace> ta version : 2.8.6.63
+20/10/22 17:04:59.820408: <info> ================= launcher start ====================
+20/10/22 17:05:00.336051: <info> launcher service name:BioStar 2 Launcher(x64)
+20/10/22 17:05:01.601668: <info> biostar_restart_wait_time_in_seconds_ is set to 5
+20/10/22 17:05:01.617292: <trace> biostar version : 2.8.6.38
+20/10/22 17:05:01.617292: <trace> ac version : 2.8.6.92
+20/10/22 17:05:01.632932: <trace> ta version : 2.8.6.63
+20/10/22 17:05:01.632932: <info> ================= launcher start ====================
+20/10/22 17:05:02.148577: <info> launcher service name:BioStar 2 Launcher(x64)

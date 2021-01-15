@@ -1,0 +1,109 @@
+[ INFO] 01-10 00:00:00.011] [pool-2-thread-1] remove old event logs: Sun Jan 10 00:00:00 ICT 2021 		[pool-2-thread-1] - service.LogService:46 :removeOldLog
+[ INFO] 01-10 00:00:00.011] [pool-2-thread-1] current UTC time is : 2564-01-09 17:00:00 		[pool-2-thread-1] - service.LogService:58 :removeOldLog
+[ INFO] 01-10 00:00:00.011] [pool-2-thread-1] before Thu Dec 10 17:00:00 ICT 2020 event log is expired. 		[pool-2-thread-1] - service.LogService:59 :removeOldLog
+[ INFO] 01-10 12:17:52.973] [https-jsse-nio-443-exec-4] Get server_url.conf : https://10.10.2.97:443 		[https-jsse-nio-443-exec-4] - util.ConfigUtils:287 :loadServerUrlConf
+[ INFO] 01-10 12:17:52.989] [https-jsse-nio-443-exec-4] create web socket session 		[https-jsse-nio-443-exec-4] - websocket.WebSocketProxyServerHandler:48 :afterConnectionEstablished
+[ INFO] 01-10 12:18:06.724] [https-jsse-nio-443-exec-8] SyncAfterUpdateForAccessGroup::aopUpdateAccessGroup() 		[https-jsse-nio-443-exec-8] - aop.AopUpdateAccessGroup:49 :aopUpdateAccessGroup
+[ INFO] 01-10 12:18:06.724] [https-jsse-nio-443-exec-8] SyncAfterUpdateForAccessLevel::aopUpdateAccessLevel() 		[https-jsse-nio-443-exec-8] - aop.AopUpdateAccessLevel:46 :aopUpdateAccessLevel
+[ INFO] 01-10 12:18:06.724] [https-jsse-nio-443-exec-8] SyncAfterUpdateForFloorLevel::aopUpdateFloorLevel() 		[https-jsse-nio-443-exec-8] - aop.AopUpdateFloorLevel:46 :aopUpdateFloorLevel
+[ INFO] 01-10 12:18:12.725] [https-jsse-nio-443-exec-5] ?? ?? Query: 0.0 		[https-jsse-nio-443-exec-5] - service.UserGroupServiceImpl:931 :getList
+[ INFO] 01-10 12:18:12.943] [https-jsse-nio-443-exec-5] userGroupService.getList = end: 1608515584 		[https-jsse-nio-443-exec-5] - rest.UserGroupController:163 :getList
+[ INFO] 01-10 12:18:12.943] [https-jsse-nio-443-exec-6] ?? ?? Query: 0.0 		[https-jsse-nio-443-exec-6] - service.UserGroupServiceImpl:931 :getList
+[ INFO] 01-10 12:18:13.068] [https-jsse-nio-443-exec-6] userGroupService.getList = end: 1607991296 		[https-jsse-nio-443-exec-6] - rest.UserGroupController:163 :getList
+[ INFO] 01-10 12:18:13.068] [https-jsse-nio-443-exec-4] ?? ?? getUserGroupRanges: 0.0 		[https-jsse-nio-443-exec-4] - service.UserGroupServiceImpl:1982 :getListOrdered
+[ INFO] 01-10 12:18:13.084] [https-jsse-nio-443-exec-4] ?? ?? processCheckResults: 0.0 		[https-jsse-nio-443-exec-4] - service.UserGroupServiceImpl:1987 :getListOrdered
+[ INFO] 01-10 12:18:13.084] [https-jsse-nio-443-exec-4] ?? ?? getDisableGroupList: 0.0 		[https-jsse-nio-443-exec-4] - service.UserGroupServiceImpl:1996 :getListOrdered
+[ INFO] 01-10 12:18:13.084] [https-jsse-nio-443-exec-4] ?? ?? displayCountQuery: 0.0 		[https-jsse-nio-443-exec-4] - service.UserGroupServiceImpl:2124 :getListOrdered
+[ INFO] 01-10 12:18:13.084] [https-jsse-nio-443-exec-4] ?? ?? nativeSql: 0.0 		[https-jsse-nio-443-exec-4] - service.UserGroupServiceImpl:2133 :getListOrdered
+[ INFO] 01-10 12:18:13.084] [https-jsse-nio-443-exec-4] ?? ?? list: 0.0 		[https-jsse-nio-443-exec-4] - service.UserGroupServiceImpl:2210 :getListOrdered
+[ INFO] 01-10 12:18:13.084] [https-jsse-nio-443-exec-4] ?? ?? total list: 0.016 		[https-jsse-nio-443-exec-4] - service.UserGroupServiceImpl:2211 :getListOrdered
+[ INFO] 01-10 12:18:13.287] [https-jsse-nio-443-exec-10] ?? ?? getUserGroupRanges: 0.0 		[https-jsse-nio-443-exec-10] - service.UserGroupServiceImpl:1982 :getListOrdered
+[ INFO] 01-10 12:18:13.287] [https-jsse-nio-443-exec-10] ?? ?? selectMainQuery: 0.0 		[https-jsse-nio-443-exec-10] - service.UserGroupServiceImpl:1017 :processCheckResults
+[ INFO] 01-10 12:18:13.287] [https-jsse-nio-443-exec-10] ?? ?? selectMainQuery get all ranges: 0.0 		[https-jsse-nio-443-exec-10] - service.UserGroupServiceImpl:1053 :processCheckResults
+[ INFO] 01-10 12:18:13.287] [https-jsse-nio-443-exec-10] ?? ?? selectMainQuery adjust min max: 0.0 		[https-jsse-nio-443-exec-10] - service.UserGroupServiceImpl:1270 :buildCriteriaTree
+[ INFO] 01-10 12:18:13.287] [https-jsse-nio-443-exec-10] ?? ?? selectMainQuery divide parent and child: 0.0 		[https-jsse-nio-443-exec-10] - service.UserGroupServiceImpl:1070 :processCheckResults
+[ INFO] 01-10 12:18:13.287] [https-jsse-nio-443-exec-10] ?? ?? selectMainQuery gather parent: 0.0 8 8 		[https-jsse-nio-443-exec-10] - service.UserGroupServiceImpl:1303 :buildAssociatedRelationTree
+[ INFO] 01-10 12:18:13.287] [https-jsse-nio-443-exec-10] ?? ?? selectMainQuery gather children: 0.0 0 [UserGroupServiceImpl.UserGroupRange(id=1, name=All Users, depth=0, minIndex=0, maxIndex=8, checked=false), UserGroupServiceImpl.UserGroupRange(id=1006, name=Admin, depth=1, minIndex=1, maxIndex=2, checked=false), UserGroupServiceImpl.UserGroupRange(id=1007, name=Staff, depth=1, minIndex=2, maxIndex=3, checked=false), UserGroupServiceImpl.UserGroupRange(id=1008, name=Student, depth=1, minIndex=3, maxIndex=8, checked=false), UserGroupServiceImpl.UserGroupRange(id=1009, name=Dorm A, depth=2, minIndex=4, maxIndex=5, checked=false), UserGroupServiceImpl.UserGroupRange(id=1010, name=Dorm B, depth=2, minIndex=5, maxIndex=6, checked=false), UserGroupServiceImpl.UserGroupRange(id=1011, name=Dorm C, depth=2, minIndex=6, maxIndex=7, checked=false), UserGroupServiceImpl.UserGroupRange(id=1012, name=Dorm D, depth=2, minIndex=7, maxIndex=8, checked=false)] 		[https-jsse-nio-443-exec-10] - service.UserGroupServiceImpl:1347 :buildAssociatedRelationTree
+[ INFO] 01-10 12:18:13.287] [https-jsse-nio-443-exec-10] ?? ?? all check process: 0.0 		[https-jsse-nio-443-exec-10] - service.UserGroupServiceImpl:1085 :processCheckResults
+[ INFO] 01-10 12:18:13.287] [https-jsse-nio-443-exec-10] ?? ?? update check process: 0.0 		[https-jsse-nio-443-exec-10] - service.UserGroupServiceImpl:1096 :processCheckResults
+[ INFO] 01-10 12:18:13.287] [https-jsse-nio-443-exec-10] ?? ?? regenerate check list process: 0.0 		[https-jsse-nio-443-exec-10] - service.UserGroupServiceImpl:1101 :processCheckResults
+[ INFO] 01-10 12:18:13.287] [https-jsse-nio-443-exec-10] ?? ?? processCheckResults: 0.0 		[https-jsse-nio-443-exec-10] - service.UserGroupServiceImpl:1987 :getListOrdered
+[ INFO] 01-10 12:18:13.287] [https-jsse-nio-443-exec-10] ?? ?? getDisableGroupList: 0.0 		[https-jsse-nio-443-exec-10] - service.UserGroupServiceImpl:1996 :getListOrdered
+[ INFO] 01-10 12:18:13.287] [https-jsse-nio-443-exec-10] ?? ?? displayCountQuery: 0.0 		[https-jsse-nio-443-exec-10] - service.UserGroupServiceImpl:2124 :getListOrdered
+[ INFO] 01-10 12:18:13.303] [https-jsse-nio-443-exec-10] ?? ?? nativeSql: 0.016 		[https-jsse-nio-443-exec-10] - service.UserGroupServiceImpl:2133 :getListOrdered
+[ INFO] 01-10 12:18:13.303] [https-jsse-nio-443-exec-10] ?? ?? list: 0.0 		[https-jsse-nio-443-exec-10] - service.UserGroupServiceImpl:2210 :getListOrdered
+[ INFO] 01-10 12:18:13.303] [https-jsse-nio-443-exec-10] ?? ?? total list: 0.016 		[https-jsse-nio-443-exec-10] - service.UserGroupServiceImpl:2211 :getListOrdered
+[ INFO] 01-10 12:18:13.412] [https-jsse-nio-443-exec-10] userGroupService.getList = end: 1608515584 		[https-jsse-nio-443-exec-10] - rest.UserGroupController:163 :getList
+[ INFO] 01-10 12:18:27.226] [https-jsse-nio-443-exec-2] SyncAfterUpdateForAccessGroup::aopUpdateAccessGroup() 		[https-jsse-nio-443-exec-2] - aop.AopUpdateAccessGroup:49 :aopUpdateAccessGroup
+[ INFO] 01-10 12:18:27.226] [https-jsse-nio-443-exec-2] SyncAfterUpdateForAccessLevel::aopUpdateAccessLevel() 		[https-jsse-nio-443-exec-2] - aop.AopUpdateAccessLevel:46 :aopUpdateAccessLevel
+[ INFO] 01-10 12:18:27.226] [https-jsse-nio-443-exec-2] SyncAfterUpdateForFloorLevel::aopUpdateFloorLevel() 		[https-jsse-nio-443-exec-2] - aop.AopUpdateFloorLevel:46 :aopUpdateFloorLevel
+[ INFO] 01-10 12:18:32.492] [https-jsse-nio-443-exec-6] ?? ?? getUserGroupRanges: 0.0 		[https-jsse-nio-443-exec-6] - service.UserGroupServiceImpl:1982 :getListOrdered
+[ INFO] 01-10 12:18:32.492] [https-jsse-nio-443-exec-6] ?? ?? processCheckResults: 0.0 		[https-jsse-nio-443-exec-6] - service.UserGroupServiceImpl:1987 :getListOrdered
+[ INFO] 01-10 12:18:32.492] [https-jsse-nio-443-exec-6] ?? ?? getDisableGroupList: 0.0 		[https-jsse-nio-443-exec-6] - service.UserGroupServiceImpl:1996 :getListOrdered
+[ INFO] 01-10 12:18:32.492] [https-jsse-nio-443-exec-6] ?? ?? displayCountQuery: 0.0 		[https-jsse-nio-443-exec-6] - service.UserGroupServiceImpl:2124 :getListOrdered
+[ INFO] 01-10 12:18:32.507] [https-jsse-nio-443-exec-6] ?? ?? nativeSql: 0.015 		[https-jsse-nio-443-exec-6] - service.UserGroupServiceImpl:2133 :getListOrdered
+[ INFO] 01-10 12:18:32.507] [https-jsse-nio-443-exec-6] ?? ?? list: 0.0 		[https-jsse-nio-443-exec-6] - service.UserGroupServiceImpl:2210 :getListOrdered
+[ INFO] 01-10 12:18:32.507] [https-jsse-nio-443-exec-6] ?? ?? total list: 0.015 		[https-jsse-nio-443-exec-6] - service.UserGroupServiceImpl:2211 :getListOrdered
+[ INFO] 01-10 12:18:32.695] [https-jsse-nio-443-exec-1] ?? ?? getUserGroupRanges: 0.0 		[https-jsse-nio-443-exec-1] - service.UserGroupServiceImpl:1982 :getListOrdered
+[ INFO] 01-10 12:18:32.695] [https-jsse-nio-443-exec-1] ?? ?? selectMainQuery: 0.0 		[https-jsse-nio-443-exec-1] - service.UserGroupServiceImpl:1017 :processCheckResults
+[ INFO] 01-10 12:18:32.695] [https-jsse-nio-443-exec-1] ?? ?? selectMainQuery get all ranges: 0.0 		[https-jsse-nio-443-exec-1] - service.UserGroupServiceImpl:1053 :processCheckResults
+[ INFO] 01-10 12:18:32.695] [https-jsse-nio-443-exec-1] ?? ?? selectMainQuery adjust min max: 0.0 		[https-jsse-nio-443-exec-1] - service.UserGroupServiceImpl:1270 :buildCriteriaTree
+[ INFO] 01-10 12:18:32.710] [https-jsse-nio-443-exec-1] ?? ?? selectMainQuery divide parent and child: 0.015 		[https-jsse-nio-443-exec-1] - service.UserGroupServiceImpl:1070 :processCheckResults
+[ INFO] 01-10 12:18:32.710] [https-jsse-nio-443-exec-1] ?? ?? selectMainQuery gather parent: 0.015 8 8 		[https-jsse-nio-443-exec-1] - service.UserGroupServiceImpl:1303 :buildAssociatedRelationTree
+[ INFO] 01-10 12:18:32.710] [https-jsse-nio-443-exec-1] ?? ?? selectMainQuery gather children: 0.015 0 [UserGroupServiceImpl.UserGroupRange(id=1, name=All Users, depth=0, minIndex=0, maxIndex=8, checked=false), UserGroupServiceImpl.UserGroupRange(id=1006, name=Admin, depth=1, minIndex=1, maxIndex=2, checked=false), UserGroupServiceImpl.UserGroupRange(id=1007, name=Staff, depth=1, minIndex=2, maxIndex=3, checked=false), UserGroupServiceImpl.UserGroupRange(id=1008, name=Student, depth=1, minIndex=3, maxIndex=8, checked=false), UserGroupServiceImpl.UserGroupRange(id=1009, name=Dorm A, depth=2, minIndex=4, maxIndex=5, checked=false), UserGroupServiceImpl.UserGroupRange(id=1010, name=Dorm B, depth=2, minIndex=5, maxIndex=6, checked=false), UserGroupServiceImpl.UserGroupRange(id=1011, name=Dorm C, depth=2, minIndex=6, maxIndex=7, checked=false), UserGroupServiceImpl.UserGroupRange(id=1012, name=Dorm D, depth=2, minIndex=7, maxIndex=8, checked=false)] 		[https-jsse-nio-443-exec-1] - service.UserGroupServiceImpl:1347 :buildAssociatedRelationTree
+[ INFO] 01-10 12:18:32.710] [https-jsse-nio-443-exec-1] ?? ?? all check process: 0.015 		[https-jsse-nio-443-exec-1] - service.UserGroupServiceImpl:1085 :processCheckResults
+[ INFO] 01-10 12:18:32.710] [https-jsse-nio-443-exec-1] ?? ?? update check process: 0.015 		[https-jsse-nio-443-exec-1] - service.UserGroupServiceImpl:1096 :processCheckResults
+[ INFO] 01-10 12:18:32.710] [https-jsse-nio-443-exec-1] ?? ?? regenerate check list process: 0.015 		[https-jsse-nio-443-exec-1] - service.UserGroupServiceImpl:1101 :processCheckResults
+[ INFO] 01-10 12:18:32.710] [https-jsse-nio-443-exec-1] ?? ?? processCheckResults: 0.015 		[https-jsse-nio-443-exec-1] - service.UserGroupServiceImpl:1987 :getListOrdered
+[ INFO] 01-10 12:18:32.710] [https-jsse-nio-443-exec-1] ?? ?? getDisableGroupList: 0.0 		[https-jsse-nio-443-exec-1] - service.UserGroupServiceImpl:1996 :getListOrdered
+[ INFO] 01-10 12:18:32.710] [https-jsse-nio-443-exec-1] ?? ?? displayCountQuery: 0.0 		[https-jsse-nio-443-exec-1] - service.UserGroupServiceImpl:2124 :getListOrdered
+[ INFO] 01-10 12:18:32.710] [https-jsse-nio-443-exec-1] ?? ?? nativeSql: 0.0 		[https-jsse-nio-443-exec-1] - service.UserGroupServiceImpl:2133 :getListOrdered
+[ INFO] 01-10 12:18:32.710] [https-jsse-nio-443-exec-1] ?? ?? list: 0.0 		[https-jsse-nio-443-exec-1] - service.UserGroupServiceImpl:2210 :getListOrdered
+[ INFO] 01-10 12:18:32.710] [https-jsse-nio-443-exec-1] ?? ?? total list: 0.015 		[https-jsse-nio-443-exec-1] - service.UserGroupServiceImpl:2211 :getListOrdered
+[ INFO] 01-10 12:18:32.835] [https-jsse-nio-443-exec-1] userGroupService.getList = end: 1608515584 		[https-jsse-nio-443-exec-1] - rest.UserGroupController:163 :getList
+[ INFO] 01-10 12:18:36.539] [https-jsse-nio-443-exec-9] SyncAfterUpdateForAccessGroup::aopUpdateAccessGroup() 		[https-jsse-nio-443-exec-9] - aop.AopUpdateAccessGroup:49 :aopUpdateAccessGroup
+[ INFO] 01-10 12:18:36.539] [https-jsse-nio-443-exec-9] SyncAfterUpdateForAccessLevel::aopUpdateAccessLevel() 		[https-jsse-nio-443-exec-9] - aop.AopUpdateAccessLevel:46 :aopUpdateAccessLevel
+[ INFO] 01-10 12:18:36.539] [https-jsse-nio-443-exec-9] SyncAfterUpdateForFloorLevel::aopUpdateFloorLevel() 		[https-jsse-nio-443-exec-9] - aop.AopUpdateFloorLevel:46 :aopUpdateFloorLevel
+[ INFO] 01-10 14:19:02.243] [WebSocketClient-AsyncIO-1] close web socket server session status: CloseStatus[code=1000, reason={
+    "Response": {
+        "code": "1101"
+    }
+}
+] 		[WebSocketClient-AsyncIO-1] - websocket.WebSocketProxyClientHandler:38 :afterConnectionClosed
+[ INFO] 01-10 21:56:55.496] [https-jsse-nio-443-exec-1] close web socket client session status: CloseStatus[code=1000, reason=null] 		[https-jsse-nio-443-exec-1] - websocket.NextHop:67 :closeWebSocketProxyClientSession
+[ INFO] 01-10 21:56:55.512] [https-jsse-nio-443-exec-1] remove web socket session 		[https-jsse-nio-443-exec-1] - websocket.WebSocketProxyServerHandler:59 :afterConnectionClosed
+[ INFO] 01-10 21:56:55.528] [https-jsse-nio-443-exec-10] Get server_url.conf : https://10.10.2.97:443 		[https-jsse-nio-443-exec-10] - util.ConfigUtils:287 :loadServerUrlConf
+[ INFO] 01-10 21:56:55.543] [https-jsse-nio-443-exec-10] create web socket session 		[https-jsse-nio-443-exec-10] - websocket.WebSocketProxyServerHandler:48 :afterConnectionEstablished
+[ INFO] 01-10 21:57:07.249] [https-jsse-nio-443-exec-8] SyncAfterUpdateForAccessGroup::aopUpdateAccessGroup() 		[https-jsse-nio-443-exec-8] - aop.AopUpdateAccessGroup:49 :aopUpdateAccessGroup
+[ INFO] 01-10 21:57:07.249] [https-jsse-nio-443-exec-8] SyncAfterUpdateForAccessLevel::aopUpdateAccessLevel() 		[https-jsse-nio-443-exec-8] - aop.AopUpdateAccessLevel:46 :aopUpdateAccessLevel
+[ INFO] 01-10 21:57:07.249] [https-jsse-nio-443-exec-8] SyncAfterUpdateForFloorLevel::aopUpdateFloorLevel() 		[https-jsse-nio-443-exec-8] - aop.AopUpdateFloorLevel:46 :aopUpdateFloorLevel
+[ INFO] 01-10 21:57:13.421] [https-jsse-nio-443-exec-1] ?? ?? getUserGroupRanges: 0.0 		[https-jsse-nio-443-exec-1] - service.UserGroupServiceImpl:1982 :getListOrdered
+[ INFO] 01-10 21:57:13.421] [https-jsse-nio-443-exec-1] ?? ?? processCheckResults: 0.0 		[https-jsse-nio-443-exec-1] - service.UserGroupServiceImpl:1987 :getListOrdered
+[ INFO] 01-10 21:57:13.421] [https-jsse-nio-443-exec-1] ?? ?? getDisableGroupList: 0.0 		[https-jsse-nio-443-exec-1] - service.UserGroupServiceImpl:1996 :getListOrdered
+[ INFO] 01-10 21:57:13.421] [https-jsse-nio-443-exec-1] ?? ?? displayCountQuery: 0.0 		[https-jsse-nio-443-exec-1] - service.UserGroupServiceImpl:2124 :getListOrdered
+[ INFO] 01-10 21:57:13.421] [https-jsse-nio-443-exec-1] ?? ?? nativeSql: 0.0 		[https-jsse-nio-443-exec-1] - service.UserGroupServiceImpl:2133 :getListOrdered
+[ INFO] 01-10 21:57:13.421] [https-jsse-nio-443-exec-1] ?? ?? list: 0.0 		[https-jsse-nio-443-exec-1] - service.UserGroupServiceImpl:2210 :getListOrdered
+[ INFO] 01-10 21:57:13.421] [https-jsse-nio-443-exec-1] ?? ?? total list: 0.0 		[https-jsse-nio-443-exec-1] - service.UserGroupServiceImpl:2211 :getListOrdered
+[ INFO] 01-10 21:57:13.624] [https-jsse-nio-443-exec-4] ?? ?? getUserGroupRanges: 0.0 		[https-jsse-nio-443-exec-4] - service.UserGroupServiceImpl:1982 :getListOrdered
+[ INFO] 01-10 21:57:13.624] [https-jsse-nio-443-exec-4] ?? ?? selectMainQuery: 0.0 		[https-jsse-nio-443-exec-4] - service.UserGroupServiceImpl:1017 :processCheckResults
+[ INFO] 01-10 21:57:13.640] [https-jsse-nio-443-exec-4] ?? ?? selectMainQuery get all ranges: 0.016 		[https-jsse-nio-443-exec-4] - service.UserGroupServiceImpl:1053 :processCheckResults
+[ INFO] 01-10 21:57:13.640] [https-jsse-nio-443-exec-4] ?? ?? selectMainQuery adjust min max: 0.016 		[https-jsse-nio-443-exec-4] - service.UserGroupServiceImpl:1270 :buildCriteriaTree
+[ INFO] 01-10 21:57:13.640] [https-jsse-nio-443-exec-4] ?? ?? selectMainQuery divide parent and child: 0.016 		[https-jsse-nio-443-exec-4] - service.UserGroupServiceImpl:1070 :processCheckResults
+[ INFO] 01-10 21:57:13.640] [https-jsse-nio-443-exec-4] ?? ?? selectMainQuery gather parent: 0.016 8 8 		[https-jsse-nio-443-exec-4] - service.UserGroupServiceImpl:1303 :buildAssociatedRelationTree
+[ INFO] 01-10 21:57:13.640] [https-jsse-nio-443-exec-4] ?? ?? selectMainQuery gather children: 0.016 0 [UserGroupServiceImpl.UserGroupRange(id=1, name=All Users, depth=0, minIndex=0, maxIndex=8, checked=false), UserGroupServiceImpl.UserGroupRange(id=1006, name=Admin, depth=1, minIndex=1, maxIndex=2, checked=false), UserGroupServiceImpl.UserGroupRange(id=1007, name=Staff, depth=1, minIndex=2, maxIndex=3, checked=false), UserGroupServiceImpl.UserGroupRange(id=1008, name=Student, depth=1, minIndex=3, maxIndex=8, checked=false), UserGroupServiceImpl.UserGroupRange(id=1009, name=Dorm A, depth=2, minIndex=4, maxIndex=5, checked=false), UserGroupServiceImpl.UserGroupRange(id=1010, name=Dorm B, depth=2, minIndex=5, maxIndex=6, checked=false), UserGroupServiceImpl.UserGroupRange(id=1011, name=Dorm C, depth=2, minIndex=6, maxIndex=7, checked=false), UserGroupServiceImpl.UserGroupRange(id=1012, name=Dorm D, depth=2, minIndex=7, maxIndex=8, checked=false)] 		[https-jsse-nio-443-exec-4] - service.UserGroupServiceImpl:1347 :buildAssociatedRelationTree
+[ INFO] 01-10 21:57:13.640] [https-jsse-nio-443-exec-4] ?? ?? all check process: 0.016 		[https-jsse-nio-443-exec-4] - service.UserGroupServiceImpl:1085 :processCheckResults
+[ INFO] 01-10 21:57:13.640] [https-jsse-nio-443-exec-4] ?? ?? update check process: 0.016 		[https-jsse-nio-443-exec-4] - service.UserGroupServiceImpl:1096 :processCheckResults
+[ INFO] 01-10 21:57:13.640] [https-jsse-nio-443-exec-4] ?? ?? regenerate check list process: 0.016 		[https-jsse-nio-443-exec-4] - service.UserGroupServiceImpl:1101 :processCheckResults
+[ INFO] 01-10 21:57:13.640] [https-jsse-nio-443-exec-4] ?? ?? processCheckResults: 0.016 		[https-jsse-nio-443-exec-4] - service.UserGroupServiceImpl:1987 :getListOrdered
+[ INFO] 01-10 21:57:13.640] [https-jsse-nio-443-exec-4] ?? ?? getDisableGroupList: 0.0 		[https-jsse-nio-443-exec-4] - service.UserGroupServiceImpl:1996 :getListOrdered
+[ INFO] 01-10 21:57:13.640] [https-jsse-nio-443-exec-4] ?? ?? displayCountQuery: 0.0 		[https-jsse-nio-443-exec-4] - service.UserGroupServiceImpl:2124 :getListOrdered
+[ INFO] 01-10 21:57:13.640] [https-jsse-nio-443-exec-4] ?? ?? nativeSql: 0.0 		[https-jsse-nio-443-exec-4] - service.UserGroupServiceImpl:2133 :getListOrdered
+[ INFO] 01-10 21:57:13.640] [https-jsse-nio-443-exec-4] ?? ?? list: 0.0 		[https-jsse-nio-443-exec-4] - service.UserGroupServiceImpl:2210 :getListOrdered
+[ INFO] 01-10 21:57:13.640] [https-jsse-nio-443-exec-4] ?? ?? total list: 0.016 		[https-jsse-nio-443-exec-4] - service.UserGroupServiceImpl:2211 :getListOrdered
+[ INFO] 01-10 21:57:13.811] [https-jsse-nio-443-exec-4] userGroupService.getList = end: 1624768512 		[https-jsse-nio-443-exec-4] - rest.UserGroupController:163 :getList
+[ INFO] 01-10 21:57:21.157] [https-jsse-nio-443-exec-1] SyncAfterUpdateForAccessGroup::aopUpdateAccessGroup() 		[https-jsse-nio-443-exec-1] - aop.AopUpdateAccessGroup:49 :aopUpdateAccessGroup
+[ INFO] 01-10 21:57:21.157] [https-jsse-nio-443-exec-1] SyncAfterUpdateForAccessLevel::aopUpdateAccessLevel() 		[https-jsse-nio-443-exec-1] - aop.AopUpdateAccessLevel:46 :aopUpdateAccessLevel
+[ INFO] 01-10 21:57:21.157] [https-jsse-nio-443-exec-1] SyncAfterUpdateForFloorLevel::aopUpdateFloorLevel() 		[https-jsse-nio-443-exec-1] - aop.AopUpdateFloorLevel:46 :aopUpdateFloorLevel
+[ INFO] 01-10 22:01:15.559] [https-jsse-nio-443-exec-4] close web socket client session status: CloseStatus[code=1001, reason=null] 		[https-jsse-nio-443-exec-4] - websocket.NextHop:67 :closeWebSocketProxyClientSession
+[ INFO] 01-10 22:01:15.559] [https-jsse-nio-443-exec-4] close web socket server session status: CloseStatus[code=1001, reason=null] 		[https-jsse-nio-443-exec-4] - websocket.WebSocketProxyClientHandler:38 :afterConnectionClosed
+[ INFO] 01-10 22:01:15.559] [https-jsse-nio-443-exec-4] remove web socket session 		[https-jsse-nio-443-exec-4] - websocket.WebSocketProxyServerHandler:59 :afterConnectionClosed

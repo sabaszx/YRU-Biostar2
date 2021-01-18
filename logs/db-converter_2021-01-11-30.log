@@ -1,6 +1,0 @@
-2021-Jan-11 07:33:35 <info> Maria DB connection info:
-2021-Jan-11 07:33:35 <info> Address: 127.0.0.1:3306
-2021-Jan-11 07:33:35 <info> ID: root
-2021-Jan-11 07:33:35 <info> Database: biostar2_ac
-2021-Jan-11 07:33:35 <error> Failed to connect to database: Unknown database 'biostar2_ac', error code = 1049
-2021-Jan-11 07:33:35 <error> Couldn't connect to mariadb.

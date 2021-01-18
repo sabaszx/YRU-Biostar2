@@ -1,6 +1,0 @@
-2021-Jan-11 03:50:53 <info> Maria DB connection info:
-2021-Jan-11 03:50:53 <info> Address: 127.0.0.1:3312
-2021-Jan-11 03:50:53 <info> ID: biostar2_ac_user
-2021-Jan-11 03:50:53 <info> Database: biostar2_ac
-2021-Jan-11 03:50:54 <error> Failed to connect to database: Can't connect to MySQL server on '127.0.0.1' (10061), error code = 2002
-2021-Jan-11 03:50:54 <error> Couldn't connect to mariadb.

@@ -1,6 +1,0 @@
-2021-Jan-11 03:51:18 <info> Maria DB connection info:
-2021-Jan-11 03:51:18 <info> Address: 10.10.2.97:3312
-2021-Jan-11 03:51:18 <info> ID: biostar2_ac_user
-2021-Jan-11 03:51:18 <info> Database: biostar2_ac
-2021-Jan-11 03:51:18 <error> Failed to connect to database: Host 'AccessControlDorm' is not allowed to connect to this MariaDB server, error code = 1130
-2021-Jan-11 03:51:18 <error> Couldn't connect to mariadb.

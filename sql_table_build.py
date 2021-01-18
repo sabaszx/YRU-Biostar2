@@ -24,7 +24,7 @@ connection = pymysql.connect(
 curr = connection.cursor()
 
 #in order to build log table daily, create table.
-create_schema_string = 'CREATE TABLE t_lg' + date_format + 'SELECT * FROM ' + current_format 
+create_schema_string = 'CREATE TABLE t_lg' + date_format + 'AS SELECT * FROM biostar2_ac.' + current_format 
 
 #execute command
 curr.execute(create_schema_string)
